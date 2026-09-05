@@ -50,10 +50,30 @@ have the game read the plain results. The browser never sees a key.
 3. Go to the **Actions** tab, open "Refresh property listings", and click
    **Run workflow** to fetch immediately. It also runs automatically every
    3 days, committing fresh listings straight into `data/*.json`.
-4. Adjust what shows up per pack (price range, property type, state) by
-   editing the `PACKS` array at the top of `scripts/fetch-properties.js`.
-   Those filters are sent to RentCast directly, so they search the whole
-   database rather than filtering a small sample.
+4. Adjust what shows up per pack (price range, property type, state, year
+   built) by editing the `PACKS` array at the top of
+   `scripts/fetch-properties.js`. Those filters are sent to RentCast
+   directly, so they search the whole database rather than filtering a
+   small sample.
+
+### Adding your own pack
+
+A pack is one RentCast query. To add one:
+
+1. Add an entry to `PACKS` in `scripts/fetch-properties.js` with a `key`,
+   `outFile`, `label`, the `rentcastParams` to search by, and a
+   `priceRange` sanity check.
+2. Add a matching entry to `CONFIG.packs` in `app.js` (emoji, name, the
+   same data file, `maxGuess` for the slider, and either `free: true` or a
+   price plus `stripeLink`).
+3. Run the refresh workflow. Until it runs, the pack politely reports that
+   it's waiting on data rather than breaking.
+
+Useful filters: `price`, `squareFootage`, `lotSize`, `yearBuilt` and
+`bedrooms` all take a `"min:max"` range; `propertyType` and `city`/`state`
+take exact values, and `propertyType` accepts `"Single Family|Condo"`.
+Each pack costs one API call per refresh, so keep an eye on the budget
+below when adding several.
 
 ### Where the photos come from
 
@@ -69,8 +89,10 @@ up inside the committed data files. The game centres each photo on the home
 and draws a marker over the middle so players know which house is theirs.
 
 Because it's US-only imagery, it covers every listing RentCast returns
-(including Hawaii). Budget: **3 API calls per refresh** (one per pack), so
-running every 3 days uses about 30 of your 50 free monthly calls.
+(including Hawaii). Budget: **one API call per pack per refresh** — 8 packs
+running weekly is about 35 of your 50 free monthly calls, leaving headroom
+for manual runs. Each refresh pulls 100 listings per pack, so there are
+~800 properties in rotation.
 
 ### Want street-level photos instead?
 

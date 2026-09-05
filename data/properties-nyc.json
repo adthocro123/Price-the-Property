@@ -1,0 +1,7 @@
+{
+  "pack": "nyc",
+  "label": "Big Apple",
+  "source": "pending",
+  "note": "Populated by scripts/fetch-properties.js. Run the \"Refresh property listings\" workflow to fill this pack with live listings.",
+  "properties": []
+}

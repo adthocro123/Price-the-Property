@@ -283,6 +283,15 @@ button { font-family: inherit; }
 }
 .quick-adjust-btn:active { transform: scale(.94); background: var(--card-alt); }
 
+.hint-btn {
+  width: 100%; margin-bottom: 12px; padding: 11px 14px; border-radius: 999px; cursor: pointer;
+  background: #FFF6DF; border: 2px dashed var(--gold-dark); color: #8A6206;
+  font-family: 'Poppins', sans-serif; font-weight: 800; font-size: .82rem;
+  transition: transform .1s ease, background .15s ease;
+}
+.hint-btn:active:not(:disabled) { transform: scale(.97); background: #FDEFC6; }
+.hint-btn:disabled { opacity: .6; cursor: default; border-style: solid; }
+
 /* ---------- Result modal (bottom sheet) ---------- */
 .result-modal {
   position: fixed; inset: 0; z-index: 60; display: flex; align-items: flex-end; justify-content: center;

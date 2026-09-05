@@ -2,10 +2,11 @@ name: Refresh property listings
 
 on:
   schedule:
-    # Every 3 days at 13:00 UTC. Each run spends 3 RentCast calls (one per
-    # pack), so this stays well inside the free tier's 50 calls/month while
-    # keeping the listings cycling.
-    - cron: "0 13 */3 * *"
+    # Mondays at 13:00 UTC. Each run spends one RentCast call per pack (8),
+    # so weekly lands around 35 of the free tier's 50 calls/month — leaving
+    # headroom for manual runs. Each run pulls 100 fresh listings per pack,
+    # so there's plenty to cycle through between refreshes.
+    - cron: "0 13 * * 1"
   workflow_dispatch:
 
 permissions:

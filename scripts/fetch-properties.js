@@ -51,15 +51,14 @@ function viewWidthMeters(propertyType) {
 // straight to RentCast, so filtering happens server-side against their whole
 // database rather than against a small sample. Numeric ranges use "min:max"
 // and multiple values use "a|b" (see developers.rentcast.io).
+const LISTINGS_PER_PACK = 100;
+
 const PACKS = [
   {
     key: "standard",
     outFile: "properties-standard.json",
     label: "Starter Homes",
-    count: 40,
     rentcastParams: {
-      limit: "500",
-      status: "Active",
       propertyType: "Single Family|Townhouse|Condo",
       price: "150000:650000"
     },
@@ -69,10 +68,7 @@ const PACKS = [
     key: "mansion",
     outFile: "properties-mansion.json",
     label: "Mansion Expansion",
-    count: 40,
     rentcastParams: {
-      limit: "500",
-      status: "Active",
       propertyType: "Single Family",
       price: "3000000:30000000"
     },
@@ -82,20 +78,75 @@ const PACKS = [
     key: "hawaii",
     outFile: "properties-hawaii.json",
     label: "Hawaii Expansion",
-    count: 40,
     rentcastParams: {
-      limit: "500",
-      status: "Active",
       state: "HI",
       price: "400000:10000000"
     },
     priceRange: [400000, 10000000]
+  },
+  {
+    key: "nyc",
+    outFile: "properties-nyc.json",
+    label: "Big Apple",
+    rentcastParams: {
+      city: "New York",
+      state: "NY",
+      price: "200000:15000000"
+    },
+    priceRange: [200000, 15000000]
+  },
+  {
+    key: "colorado",
+    outFile: "properties-colorado.json",
+    label: "Colorado Collection",
+    rentcastParams: {
+      state: "CO",
+      price: "300000:10000000"
+    },
+    priceRange: [300000, 10000000]
+  },
+  {
+    key: "fixer",
+    outFile: "properties-fixer.json",
+    label: "Fixer-Uppers",
+    rentcastParams: {
+      propertyType: "Single Family|Townhouse",
+      price: "40000:200000"
+    },
+    priceRange: [40000, 200000]
+  },
+  {
+    key: "newbuild",
+    outFile: "properties-newbuild.json",
+    label: "Brand New Builds",
+    rentcastParams: {
+      propertyType: "Single Family|Townhouse",
+      yearBuilt: "2023:2026",
+      price: "200000:2000000"
+    },
+    priceRange: [200000, 2000000]
+  },
+  {
+    key: "historic",
+    outFile: "properties-historic.json",
+    label: "Historic Homes",
+    rentcastParams: {
+      propertyType: "Single Family",
+      yearBuilt: "1800:1940",
+      price: "150000:3000000"
+    },
+    priceRange: [150000, 3000000]
   }
 ];
 
+// Every pack asks for the largest page RentCast allows, so one call per pack
+// yields a deep pool to sample from. That keeps the whole refresh within the
+// free tier's monthly call budget.
+const SHARED_PARAMS = { limit: "500", status: "Active" };
+
 async function rentcastSearch(params) {
   const url = new URL("https://api.rentcast.io/v1/listings/sale");
-  Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
+  Object.entries({ ...SHARED_PARAMS, ...params }).forEach(([k, v]) => url.searchParams.set(k, v));
   const res = await fetch(url, { headers: { "X-Api-Key": RENTCAST_API_KEY, Accept: "application/json" } });
   if (!res.ok) throw new Error(`RentCast error ${res.status}: ${await res.text()}`);
   return res.json();
@@ -169,7 +220,7 @@ async function buildPack(pack) {
   // Shuffle before slicing so each run surfaces a different set of homes
   // instead of always the most recently seen ones.
   const properties = shuffle(usable)
-    .slice(0, pack.count)
+    .slice(0, LISTINGS_PER_PACK)
     .map((l, i) => toGameShape(l, `${pack.key}-${String(i + 1).padStart(3, "0")}`));
 
   const outPath = path.join(DATA_DIR, pack.outFile);
