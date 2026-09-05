@@ -89,10 +89,39 @@ up inside the committed data files. The game centres each photo on the home
 and draws a marker over the middle so players know which house is theirs.
 
 Because it's US-only imagery, it covers every listing RentCast returns
-(including Hawaii). Budget: **one API call per pack per refresh** — 8 packs
-running weekly is about 35 of your 50 free monthly calls, leaving headroom
-for manual runs. Each refresh pulls 100 listings per pack, so there are
+(including Hawaii). Each refresh pulls 100 listings per pack, so there are
 ~800 properties in rotation.
+
+### What this costs (and the guard that keeps it at $0)
+
+Nothing here bills you *except* RentCast, and only if you blow past its
+free allowance:
+
+| Piece | Cost |
+| --- | --- |
+| USGS aerial photos | Free forever — public domain, no key, no account |
+| GitHub Pages + Actions | Free for public repos |
+| RentCast | 50 requests/month free, then **$0.20 per request** |
+
+The catch is that RentCast **does not stop you** at 50. Their docs are
+explicit: *"We do not currently support hard usage caps or automatic API
+request blocking when you reach your current plan's monthly request
+limit"* — they bill the overage instead, and recommend you enforce your
+own cap.
+
+So `scripts/fetch-properties.js` enforces one. It keeps a running count in
+`data/api-usage.json` (committed, so it survives between runs), resets on
+the 1st of each month, and refuses to make another request once it hits
+`MONTHLY_CALL_BUDGET` — set to **40**, deliberately below the free 50.
+When it stops it leaves existing listings untouched and says so in the
+workflow log.
+
+Normal usage: one call per pack (8), twice a month = **16 calls**. That
+leaves room for roughly three extra manual runs before the guard trips,
+and the guard trips ten calls before RentCast would charge you anything.
+
+If you ever add packs, remember each one costs a call per refresh — check
+the budget line the script prints at the end of every run.
 
 ### Want street-level photos instead?
 

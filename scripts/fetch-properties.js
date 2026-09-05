@@ -144,6 +144,30 @@ const PACKS = [
 // free tier's monthly call budget.
 const SHARED_PARAMS = { limit: "500", status: "Active" };
 
+// RentCast's free tier covers 50 calls/month and they explicitly do NOT block
+// requests past it — they bill overage per request instead. Their docs tell
+// you to enforce your own cap, so this is it: the count lives in a committed
+// file, survives between workflow runs, and resets each calendar month.
+// Stopping at 40 leaves a deliberate buffer under the free allowance.
+const MONTHLY_CALL_BUDGET = 40;
+const USAGE_FILE = path.join(DATA_DIR, "api-usage.json");
+
+function currentMonth() {
+  return new Date().toISOString().slice(0, 7);
+}
+
+function readUsage() {
+  try {
+    const saved = JSON.parse(fs.readFileSync(USAGE_FILE, "utf8"));
+    if (saved.month === currentMonth()) return saved;
+  } catch (e) { /* no file yet — start fresh */ }
+  return { month: currentMonth(), calls: 0 };
+}
+
+function writeUsage(usage) {
+  fs.writeFileSync(USAGE_FILE, JSON.stringify(usage, null, 2) + "\n");
+}
+
 async function rentcastSearch(params) {
   const url = new URL("https://api.rentcast.io/v1/listings/sale");
   Object.entries({ ...SHARED_PARAMS, ...params }).forEach(([k, v]) => url.searchParams.set(k, v));
@@ -241,13 +265,31 @@ async function main() {
     console.error("Missing RENTCAST_API_KEY environment variable. Nothing to do.");
     process.exit(1);
   }
+
+  const usage = readUsage();
+  console.log(`RentCast calls used so far in ${usage.month}: ${usage.calls}/${MONTHLY_CALL_BUDGET}`);
+
   for (const pack of PACKS) {
+    if (usage.calls >= MONTHLY_CALL_BUDGET) {
+      console.warn(
+        `Monthly budget of ${MONTHLY_CALL_BUDGET} calls reached — skipping "${pack.key}" ` +
+        `and any packs after it. Existing listings are left untouched.`
+      );
+      break;
+    }
+    // Count the call before making it: if the request dies halfway we'd rather
+    // over-count than drift under the real usage this guard exists to cap.
+    usage.calls += 1;
+    writeUsage(usage);
+
     try {
       await buildPack(pack);
     } catch (err) {
       console.error(`Failed to refresh pack "${pack.key}":`, err.message);
     }
   }
+
+  console.log(`RentCast calls used this month: ${usage.calls}/${MONTHLY_CALL_BUDGET}`);
 }
 
 main();
