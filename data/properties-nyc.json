@@ -280,22 +280,6 @@
     {
       "id": "nyc-018",
       "title": "Condo in New York",
-      "address": "215 E 19th St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 2,
-      "baths": 2.5,
-      "sqft": 1702,
-      "yearBuilt": 2016,
-      "lotSizeAcres": 0,
-      "price": 3395000,
-      "latitude": 40.736136,
-      "longitude": -73.983856,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.986523%2C40.734789%2C-73.981189%2C40.737483&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-019",
-      "title": "Condo in New York",
       "address": "145 W 86th St",
       "city": "New York",
       "state": "NY",
@@ -310,7 +294,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.976310%2C40.785934%2C-73.970970%2C40.788628&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-020",
+      "id": "nyc-019",
       "title": "Condo in New York",
       "address": "15 William St",
       "city": "New York",
@@ -326,23 +310,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.013016%2C40.704009%2C-74.007684%2C40.706703&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-021",
-      "title": "Condo in New York",
-      "address": "314 W 56th St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 0,
-      "yearBuilt": 1970,
-      "lotSizeAcres": 0,
-      "price": 399000,
-      "latitude": 40.766331,
-      "longitude": -73.984309,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.986978%2C40.764984%2C-73.981640%2C40.767678&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-022",
+      "id": "nyc-020",
       "title": "Condo in New York",
       "address": "622 Washington St",
       "city": "New York",
@@ -358,7 +326,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.012202%2C40.730238%2C-74.006868%2C40.732932&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-023",
+      "id": "nyc-021",
       "title": "Condo in New York",
       "address": "252 South St",
       "city": "New York",
@@ -374,7 +342,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.993630%2C40.708734%2C-73.988298%2C40.711428&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-024",
+      "id": "nyc-022",
       "title": "Condo in New York",
       "address": "207 E 57th St",
       "city": "New York",
@@ -390,7 +358,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.969488%2C40.758915%2C-73.964152%2C40.761609&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-025",
+      "id": "nyc-023",
       "title": "Condo in New York",
       "address": "303 Park Ave",
       "city": "New York",
@@ -406,7 +374,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.976560%2C40.755539%2C-73.971224%2C40.758233&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-026",
+      "id": "nyc-024",
       "title": "Condo in New York",
       "address": "781 Fifth Ave",
       "city": "New York",
@@ -422,7 +390,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.975208%2C40.762962%2C-73.969870%2C40.765656&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-027",
+      "id": "nyc-025",
       "title": "Condo in New York",
       "address": "123 Washington St",
       "city": "New York",
@@ -438,7 +406,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.016364%2C40.707819%2C-74.011032%2C40.710513&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-028",
+      "id": "nyc-026",
       "title": "Condo in New York",
       "address": "130 E 75th St",
       "city": "New York",
@@ -454,7 +422,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.963920%2C40.771122%2C-73.958582%2C40.773816&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-029",
+      "id": "nyc-027",
       "title": "Condo in New York",
       "address": "225 E 19th St",
       "city": "New York",
@@ -470,7 +438,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.986304%2C40.734588%2C-73.980970%2C40.737282&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-030",
+      "id": "nyc-028",
       "title": "Condo in New York",
       "address": "721 Fifth Ave",
       "city": "New York",
@@ -486,23 +454,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.976561%2C40.760967%2C-73.971223%2C40.763661&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-031",
-      "title": "Condo in New York",
-      "address": "252 South St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 3,
-      "baths": 2,
-      "sqft": 1400,
-      "yearBuilt": 2019,
-      "lotSizeAcres": 0,
-      "price": 2855000,
-      "latitude": 40.710081,
-      "longitude": -73.990964,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.993630%2C40.708734%2C-73.988298%2C40.711428&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-032",
+      "id": "nyc-029",
       "title": "Condo in New York",
       "address": "405 W 23rd St",
       "city": "New York",
@@ -518,7 +470,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.004256%2C40.745426%2C-73.998920%2C40.748120&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-033",
+      "id": "nyc-030",
       "title": "Condo in New York",
       "address": "33 E End Ave",
       "city": "New York",
@@ -534,7 +486,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.949645%2C40.770069%2C-73.944307%2C40.772763&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-034",
+      "id": "nyc-031",
       "title": "Condo in New York",
       "address": "108 W 138th St",
       "city": "New York",
@@ -550,7 +502,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.943055%2C40.814822%2C-73.937713%2C40.817516&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-035",
+      "id": "nyc-032",
       "title": "Condo in New York",
       "address": "177 E 77th St",
       "city": "New York",
@@ -566,23 +518,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.961257%2C40.772009%2C-73.955919%2C40.774703&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-036",
-      "title": "Condo in New York",
-      "address": "303 Park Ave",
-      "city": "New York",
-      "state": "NY",
-      "beds": 2,
-      "baths": 2.5,
-      "sqft": 1461,
-      "yearBuilt": 1931,
-      "lotSizeAcres": 0,
-      "price": 5250000,
-      "latitude": 40.756886,
-      "longitude": -73.973892,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.976560%2C40.755539%2C-73.971224%2C40.758233&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-037",
+      "id": "nyc-033",
       "title": "Condo in New York",
       "address": "609 Second Ave",
       "city": "New York",
@@ -598,23 +534,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.979093%2C40.743099%2C-73.973757%2C40.745793&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-038",
-      "title": "Condo in New York",
-      "address": "405 W 23rd St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 0,
-      "yearBuilt": 1930,
-      "lotSizeAcres": 0,
-      "price": 589000,
-      "latitude": 40.746462,
-      "longitude": -74.001979,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.004647%2C40.745115%2C-73.999311%2C40.747809&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-039",
+      "id": "nyc-034",
       "title": "Condo in New York",
       "address": "1 Central Park W",
       "city": "New York",
@@ -630,7 +550,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.984200%2C40.767735%2C-73.978862%2C40.770429&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-040",
+      "id": "nyc-035",
       "title": "Condo in New York",
       "address": "160 W 66th St",
       "city": "New York",
@@ -646,7 +566,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.986951%2C40.772923%2C-73.981613%2C40.775617&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-041",
+      "id": "nyc-036",
       "title": "Condo in New York",
       "address": "15 Hudson Yards",
       "city": "New York",
@@ -662,7 +582,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.006002%2C40.752239%2C-74.000666%2C40.754933&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-042",
+      "id": "nyc-037",
       "title": "Condo in New York",
       "address": "16 W 19th St",
       "city": "New York",
@@ -678,7 +598,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.995235%2C40.738016%2C-73.989899%2C40.740710&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-043",
+      "id": "nyc-038",
       "title": "Condo in New York",
       "address": "845 United Nations Plz",
       "city": "New York",
@@ -694,7 +614,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.970460%2C40.751212%2C-73.965124%2C40.753906&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-044",
+      "id": "nyc-039",
       "title": "Condo in New York",
       "address": "33 Convent Ave",
       "city": "New York",
@@ -710,7 +630,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.955613%2C40.812713%2C-73.950271%2C40.815407&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-045",
+      "id": "nyc-040",
       "title": "Townhouse in New York",
       "address": "44 W 90th St",
       "city": "New York",
@@ -726,7 +646,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.970432%2C40.787974%2C-73.968414%2C40.788992&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-046",
+      "id": "nyc-041",
       "title": "Condo in New York",
       "address": "350 W 42nd St",
       "city": "New York",
@@ -742,7 +662,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.994930%2C40.756505%2C-73.989594%2C40.759199&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-047",
+      "id": "nyc-042",
       "title": "Condo in New York",
       "address": "53 W 53rd St",
       "city": "New York",
@@ -758,7 +678,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.980816%2C40.760479%2C-73.975480%2C40.763173&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-048",
+      "id": "nyc-043",
       "title": "Condo in New York",
       "address": "80 John St",
       "city": "New York",
@@ -774,23 +694,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.009516%2C40.706796%2C-74.004184%2C40.709490&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-049",
-      "title": "Condo in New York",
-      "address": "123 Washington St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 1,
-      "baths": 1,
-      "sqft": 732,
-      "yearBuilt": 2007,
-      "lotSizeAcres": 0,
-      "price": 899500,
-      "latitude": 40.709166,
-      "longitude": -74.013698,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.016364%2C40.707819%2C-74.011032%2C40.710513&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-050",
+      "id": "nyc-044",
       "title": "Condo in New York",
       "address": "111 W 56th St",
       "city": "New York",
@@ -806,7 +710,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.981146%2C40.762916%2C-73.975808%2C40.765610&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-051",
+      "id": "nyc-045",
       "title": "Condo in New York",
       "address": "50 Riverside Blvd",
       "city": "New York",
@@ -822,7 +726,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.993977%2C40.772637%2C-73.988639%2C40.775331&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-052",
+      "id": "nyc-046",
       "title": "Condo in New York",
       "address": "300 E 23rd St",
       "city": "New York",
@@ -838,7 +742,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.983434%2C40.736172%2C-73.978098%2C40.738866&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-053",
+      "id": "nyc-047",
       "title": "Condo in New York",
       "address": "540 W 49th St",
       "city": "New York",
@@ -854,7 +758,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.996984%2C40.763473%2C-73.991646%2C40.766167&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-054",
+      "id": "nyc-048",
       "title": "Condo in New York",
       "address": "305 E 72nd St",
       "city": "New York",
@@ -870,7 +774,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.960724%2C40.767496%2C-73.955386%2C40.770190&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-055",
+      "id": "nyc-049",
       "title": "Condo in New York",
       "address": "35 W 36th St",
       "city": "New York",
@@ -886,7 +790,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.988027%2C40.749218%2C-73.982691%2C40.751912&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-056",
+      "id": "nyc-050",
       "title": "Single Family in New York",
       "address": "122 First Ave",
       "city": "New York",
@@ -902,7 +806,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.986367%2C40.726595%2C-73.984351%2C40.727613&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-057",
+      "id": "nyc-051",
       "title": "Condo in New York",
       "address": "200 Riverside Blvd",
       "city": "New York",
@@ -918,7 +822,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.990330%2C40.777641%2C-73.984992%2C40.780335&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-058",
+      "id": "nyc-052",
       "title": "Condo in New York",
       "address": "500 W 18th St",
       "city": "New York",
@@ -934,23 +838,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.009946%2C40.743568%2C-74.004610%2C40.746262&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-059",
-      "title": "Single Family in New York",
-      "address": "43 W 126th St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0,
-      "price": 900000,
-      "latitude": 40.80799,
-      "longitude": -73.943318,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.944327%2C40.807481%2C-73.942309%2C40.808499&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-060",
+      "id": "nyc-053",
       "title": "Condo in New York",
       "address": "424 E 57th St",
       "city": "New York",
@@ -966,7 +854,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.964854%2C40.756329%2C-73.959518%2C40.759023&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-061",
+      "id": "nyc-054",
       "title": "Condo in New York",
       "address": "15 E 30th St",
       "city": "New York",
@@ -982,7 +870,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.987620%2C40.744416%2C-73.982284%2C40.747110&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-062",
+      "id": "nyc-055",
       "title": "Condo in New York",
       "address": "159 W 53rd St",
       "city": "New York",
@@ -998,7 +886,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.983942%2C40.761667%2C-73.978604%2C40.764361&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-063",
+      "id": "nyc-056",
       "title": "Condo in New York",
       "address": "520 E 81st St",
       "city": "New York",
@@ -1014,7 +902,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.950988%2C40.770622%2C-73.945650%2C40.773316&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-064",
+      "id": "nyc-057",
       "title": "Condo in New York",
       "address": "40 E 78th St",
       "city": "New York",
@@ -1030,7 +918,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.965119%2C40.774107%2C-73.959781%2C40.776801&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-065",
+      "id": "nyc-058",
       "title": "Condo in New York",
       "address": "50 W 47th St",
       "city": "New York",
@@ -1046,7 +934,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.983493%2C40.755839%2C-73.978157%2C40.758533&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-066",
+      "id": "nyc-059",
       "title": "Condo in New York",
       "address": "111 Fulton St",
       "city": "New York",
@@ -1062,7 +950,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.009266%2C40.708584%2C-74.003934%2C40.711278&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-067",
+      "id": "nyc-060",
       "title": "Condo in New York",
       "address": "450 E 83rd St",
       "city": "New York",
@@ -1078,23 +966,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.951676%2C40.772573%2C-73.946338%2C40.775267&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-068",
-      "title": "Condo in New York",
-      "address": "15 William St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 1,
-      "baths": 1,
-      "sqft": 832,
-      "yearBuilt": 2005,
-      "lotSizeAcres": 0.48,
-      "price": 1290000,
-      "latitude": 40.705356,
-      "longitude": -74.01035,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.013016%2C40.704009%2C-74.007684%2C40.706703&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-069",
+      "id": "nyc-061",
       "title": "Condo in New York",
       "address": "417 Grand St",
       "city": "New York",
@@ -1110,7 +982,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.989033%2C40.713916%2C-73.983699%2C40.716610&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-070",
+      "id": "nyc-062",
       "title": "Condo in New York",
       "address": "2 Columbus Ave",
       "city": "New York",
@@ -1126,7 +998,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.984648%2C40.766052%2C-73.979310%2C40.768746&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-071",
+      "id": "nyc-063",
       "title": "Single Family in New York",
       "address": "425 E 63rd St",
       "city": "New York",
@@ -1142,7 +1014,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.959598%2C40.761056%2C-73.957582%2C40.762074&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-072",
+      "id": "nyc-064",
       "title": "Condo in New York",
       "address": "246 E 51st St",
       "city": "New York",
@@ -1158,7 +1030,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.971405%2C40.754197%2C-73.966069%2C40.756891&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-073",
+      "id": "nyc-065",
       "title": "Apartment in New York",
       "address": "520 9th Ave",
       "city": "New York",
@@ -1174,7 +1046,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.996542%2C40.754940%2C-73.991206%2C40.757634&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-074",
+      "id": "nyc-066",
       "title": "Condo in New York",
       "address": "310 E 86th St",
       "city": "New York",
@@ -1190,7 +1062,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.953962%2C40.776029%2C-73.948624%2C40.778723&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-075",
+      "id": "nyc-067",
       "title": "Condo in New York",
       "address": "205 W 57th St",
       "city": "New York",
@@ -1206,7 +1078,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.982959%2C40.764595%2C-73.977621%2C40.767289&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-076",
+      "id": "nyc-068",
       "title": "Condo in New York",
       "address": "400 E 56th St",
       "city": "New York",
@@ -1222,7 +1094,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.965789%2C40.755751%2C-73.960453%2C40.758445&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-077",
+      "id": "nyc-069",
       "title": "Condo in New York",
       "address": "549 W 123rd St",
       "city": "New York",
@@ -1238,7 +1110,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.961369%2C40.811147%2C-73.956027%2C40.813841&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-078",
+      "id": "nyc-070",
       "title": "Condo in New York",
       "address": "330 E 38th St",
       "city": "New York",
@@ -1254,7 +1126,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.975386%2C40.744981%2C-73.970050%2C40.747675&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-079",
+      "id": "nyc-071",
       "title": "Condo in New York",
       "address": "252 E 57th St",
       "city": "New York",
@@ -1270,7 +1142,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.968545%2C40.757735%2C-73.963209%2C40.760429&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-080",
+      "id": "nyc-072",
       "title": "Condo in New York",
       "address": "100 W 15th St",
       "city": "New York",
@@ -1286,7 +1158,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.999410%2C40.736766%2C-73.994074%2C40.739460&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-081",
+      "id": "nyc-073",
       "title": "Condo in New York",
       "address": "515 Park Ave",
       "city": "New York",
@@ -1302,7 +1174,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.971846%2C40.761871%2C-73.966508%2C40.764565&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-082",
+      "id": "nyc-074",
       "title": "Condo in New York",
       "address": "1 E End Ave",
       "city": "New York",
@@ -1318,23 +1190,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.950247%2C40.769344%2C-73.944909%2C40.772038&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-083",
-      "title": "Condo in New York",
-      "address": "53 W 53rd St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 3,
-      "baths": 4.5,
-      "sqft": 3427,
-      "yearBuilt": 2017,
-      "lotSizeAcres": 0,
-      "price": 9495000,
-      "latitude": 40.761826,
-      "longitude": -73.978148,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.980816%2C40.760479%2C-73.975480%2C40.763173&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-084",
+      "id": "nyc-075",
       "title": "Condo in New York",
       "address": "227 W 17th St",
       "city": "New York",
@@ -1350,7 +1206,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.002102%2C40.739762%2C-73.996766%2C40.742456&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-085",
+      "id": "nyc-076",
       "title": "Condo in New York",
       "address": "220 W 148th St",
       "city": "New York",
@@ -1366,39 +1222,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.942155%2C40.822563%2C-73.936813%2C40.825257&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-086",
-      "title": "Condo in New York",
-      "address": "75 First Ave",
-      "city": "New York",
-      "state": "NY",
-      "beds": 1,
-      "baths": 2,
-      "sqft": 1106,
-      "yearBuilt": 2018,
-      "lotSizeAcres": 0,
-      "price": 1775000,
-      "latitude": 40.725653,
-      "longitude": -73.987132,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.989799%2C40.724306%2C-73.984465%2C40.727000&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-087",
-      "title": "Condo in New York",
-      "address": "50 Riverside Blvd",
-      "city": "New York",
-      "state": "NY",
-      "beds": 2,
-      "baths": 2.5,
-      "sqft": 1549,
-      "yearBuilt": 2015,
-      "lotSizeAcres": 0,
-      "price": 2900000,
-      "latitude": 40.773984,
-      "longitude": -73.991308,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.993977%2C40.772637%2C-73.988639%2C40.775331&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-088",
+      "id": "nyc-077",
       "title": "Condo in New York",
       "address": "36 Gramercy Park E",
       "city": "New York",
@@ -1414,23 +1238,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.987603%2C40.736211%2C-73.982267%2C40.738905&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-089",
-      "title": "Condo in New York",
-      "address": "304 E 73rd St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 0,
-      "yearBuilt": 1910,
-      "lotSizeAcres": 0,
-      "price": 388888,
-      "latitude": 40.769062,
-      "longitude": -73.957452,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.960121%2C40.767715%2C-73.954783%2C40.770409&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-090",
+      "id": "nyc-078",
       "title": "Condo in New York",
       "address": "347 W 57th St",
       "city": "New York",
@@ -1446,7 +1254,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.987242%2C40.766583%2C-73.981904%2C40.769277&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-091",
+      "id": "nyc-079",
       "title": "Condo in New York",
       "address": "1 Beekman Pl",
       "city": "New York",
@@ -1462,7 +1270,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.967436%2C40.751435%2C-73.962100%2C40.754129&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-092",
+      "id": "nyc-080",
       "title": "Condo in New York",
       "address": "170 Park Row",
       "city": "New York",
@@ -1478,7 +1286,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.002675%2C40.712390%2C-73.997341%2C40.715084&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-093",
+      "id": "nyc-081",
       "title": "Condo in New York",
       "address": "335 W 38th St",
       "city": "New York",
@@ -1494,55 +1302,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.995817%2C40.754252%2C-73.990481%2C40.756946&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-094",
-      "title": "Condo in New York",
-      "address": "845 United Nations Plz",
-      "city": "New York",
-      "state": "NY",
-      "beds": 3,
-      "baths": 3,
-      "sqft": 2000,
-      "yearBuilt": 2001,
-      "lotSizeAcres": 0,
-      "price": 3295000,
-      "latitude": 40.752559,
-      "longitude": -73.967792,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.970460%2C40.751212%2C-73.965124%2C40.753906&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-095",
-      "title": "Condo in New York",
-      "address": "123 Washington St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 1,
-      "baths": 1,
-      "sqft": 606,
-      "yearBuilt": 2007,
-      "lotSizeAcres": 0,
-      "price": 926000,
-      "latitude": 40.709166,
-      "longitude": -74.013698,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.016364%2C40.707819%2C-74.011032%2C40.710513&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-096",
-      "title": "Condo in New York",
-      "address": "53 W 53rd St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 4,
-      "baths": 3.5,
-      "sqft": 4220,
-      "yearBuilt": 2020,
-      "lotSizeAcres": 0,
-      "price": 14880000,
-      "latitude": 40.761826,
-      "longitude": -73.978148,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.980816%2C40.760479%2C-73.975480%2C40.763173&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-097",
+      "id": "nyc-082",
       "title": "Condo in New York",
       "address": "420 W 25th St",
       "city": "New York",
@@ -1558,23 +1318,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.004383%2C40.746740%2C-73.999047%2C40.749434&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-098",
-      "title": "Condo in New York",
-      "address": "46 Commerce St",
-      "city": "New York",
-      "state": "NY",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 0,
-      "yearBuilt": 1844,
-      "lotSizeAcres": 0,
-      "price": 699000,
-      "latitude": 40.731243,
-      "longitude": -74.005608,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-74.008275%2C40.729896%2C-74.002941%2C40.732590&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "nyc-099",
+      "id": "nyc-083",
       "title": "Condo in New York",
       "address": "3 W 122nd St",
       "city": "New York",
@@ -1590,7 +1334,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-73.948318%2C40.804223%2C-73.942978%2C40.806917&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "nyc-100",
+      "id": "nyc-084",
       "title": "Condo in New York",
       "address": "450 W 17th St",
       "city": "New York",

@@ -71,22 +71,6 @@
     },
     {
       "id": "colorado-005",
-      "title": "Land in Calhan",
-      "address": "Nka S Calhan Rd",
-      "city": "Calhan",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 245,
-      "price": 590000,
-      "latitude": 38.939074,
-      "longitude": -104.281002,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.281984%2C38.938565%2C-104.280020%2C38.939583&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-006",
       "title": "Single Family in Colorado Springs",
       "address": "6712 Golden Briar Ln",
       "city": "Colorado Springs",
@@ -102,23 +86,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.660184%2C38.927147%2C-104.658220%2C38.928165&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-007",
-      "title": "Land in Calhan",
-      "address": "23809 Judge Orr Rd",
-      "city": "Calhan",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 38.08,
-      "price": 425000,
-      "latitude": 38.95230654,
-      "longitude": -104.3837786,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.384760%2C38.951797%2C-104.382797%2C38.952816&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-008",
+      "id": "colorado-006",
       "title": "Single Family in Colorado Springs",
       "address": "6532 Miro Ln",
       "city": "Colorado Springs",
@@ -134,7 +102,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.718611%2C38.978742%2C-104.716647%2C38.979760&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-009",
+      "id": "colorado-007",
       "title": "Single Family in Peyton",
       "address": "2550 Slocum Rd",
       "city": "Peyton",
@@ -150,7 +118,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.520266%2C38.869240%2C-104.518304%2C38.870258&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-010",
+      "id": "colorado-008",
       "title": "Single Family in Monument",
       "address": "4732 Foothills Flash Ct",
       "city": "Monument",
@@ -166,7 +134,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.913323%2C39.057880%2C-104.911357%2C39.058898&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-011",
+      "id": "colorado-009",
       "title": "Single Family in Manitou Springs",
       "address": "6230 Waterfall Loop",
       "city": "Manitou Springs",
@@ -182,23 +150,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.932921%2C38.830503%2C-104.930961%2C38.831521&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-012",
-      "title": "Land in Colorado Springs",
-      "address": "3354 White Bear Pt",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 5,
-      "price": 620000,
-      "latitude": 39.045434,
-      "longitude": -104.889862,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.890845%2C39.044925%2C-104.888879%2C39.045943&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-013",
+      "id": "colorado-010",
       "title": "Single Family in Colorado Springs",
       "address": "7350 Waterwheel St",
       "city": "Colorado Springs",
@@ -214,7 +166,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.687997%2C38.724650%2C-104.686039%2C38.725668&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-014",
+      "id": "colorado-011",
       "title": "Single Family in Colorado Springs",
       "address": "936 E Moreno Ave",
       "city": "Colorado Springs",
@@ -230,7 +182,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.807770%2C38.824848%2C-104.805810%2C38.825866&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-015",
+      "id": "colorado-012",
       "title": "Single Family in Colorado Springs",
       "address": "1381 Cresson Mine Dr",
       "city": "Colorado Springs",
@@ -246,7 +198,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.854676%2C38.829307%2C-104.852716%2C38.830325&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-016",
+      "id": "colorado-013",
       "title": "Single Family in Colorado Springs",
       "address": "13820 Paradise Villas Grv",
       "city": "Colorado Springs",
@@ -262,7 +214,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.832211%2C39.034262%2C-104.830245%2C39.035280&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-017",
+      "id": "colorado-014",
       "title": "Single Family in Colorado Springs",
       "address": "8544 Vanderwood Rd",
       "city": "Colorado Springs",
@@ -278,7 +230,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.700210%2C38.953661%2C-104.698246%2C38.954679&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-018",
+      "id": "colorado-015",
       "title": "Single Family in Manitou Springs",
       "address": "198 Crystal Park Rd",
       "city": "Manitou Springs",
@@ -294,7 +246,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.898773%2C38.851409%2C-104.896813%2C38.852427&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-019",
+      "id": "colorado-016",
       "title": "Single Family in Calhan",
       "address": "369 Indian Grass St",
       "city": "Calhan",
@@ -310,7 +262,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.421323%2C38.835473%2C-104.419363%2C38.836491&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-020",
+      "id": "colorado-017",
       "title": "Single Family in Colorado Springs",
       "address": "7792 Bannockburn Trl",
       "city": "Colorado Springs",
@@ -326,7 +278,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.681598%2C38.970573%2C-104.679634%2C38.971591&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-021",
+      "id": "colorado-018",
       "title": "Townhouse in Colorado Springs",
       "address": "1116 Babette Hts",
       "city": "Colorado Springs",
@@ -342,23 +294,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.874004%2C38.836359%2C-104.872044%2C38.837377&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-022",
-      "title": "Land in Colorado Springs",
-      "address": "18735 Brown Rd",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 15.26,
-      "price": 675000,
-      "latitude": 39.101931,
-      "longitude": -104.718643,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.719627%2C39.101422%2C-104.717659%2C39.102440&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-023",
+      "id": "colorado-019",
       "title": "Townhouse in Colorado Springs",
       "address": "2611 Malpaso Pt",
       "city": "Colorado Springs",
@@ -374,7 +310,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.703590%2C38.868132%2C-104.701628%2C38.869150&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-024",
+      "id": "colorado-020",
       "title": "Townhouse in Colorado Springs",
       "address": "79 W Old Broadmoor Rd",
       "city": "Colorado Springs",
@@ -390,23 +326,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.828112%2C38.800049%2C-104.826152%2C38.801067&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-025",
-      "title": "Land in Colorado Springs",
-      "address": "16511 Early Light Dr",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 7.21,
-      "price": 345000,
-      "latitude": 39.07214,
-      "longitude": -104.604622,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.605606%2C39.071631%2C-104.603638%2C39.072649&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-026",
+      "id": "colorado-021",
       "title": "Condo in Colorado Springs",
       "address": "4790 Wells Branch Hts",
       "city": "Colorado Springs",
@@ -422,7 +342,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.741921%2C38.921182%2C-104.736725%2C38.923876&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-027",
+      "id": "colorado-022",
       "title": "Single Family in Colorado Springs",
       "address": "3375 Pinehurst Cir",
       "city": "Colorado Springs",
@@ -438,7 +358,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.765080%2C39.081034%2C-104.763112%2C39.082052&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-028",
+      "id": "colorado-023",
       "title": "Single Family in Colorado Springs",
       "address": "11073 Mosey Trl",
       "city": "Colorado Springs",
@@ -454,7 +374,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.620262%2C39.072211%2C-104.618294%2C39.073229&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-029",
+      "id": "colorado-024",
       "title": "Townhouse in Colorado Springs",
       "address": "4358 Siferd Blvd",
       "city": "Colorado Springs",
@@ -470,7 +390,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.749761%2C38.892625%2C-104.747799%2C38.893643&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-030",
+      "id": "colorado-025",
       "title": "Single Family in Colorado Springs",
       "address": "5070 Vessey Rd",
       "city": "Colorado Springs",
@@ -486,7 +406,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.727513%2C39.038964%2C-104.725547%2C39.039982&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-031",
+      "id": "colorado-026",
       "title": "Condo in Colorado Springs",
       "address": "5950 Eagle Glen Vw",
       "city": "Colorado Springs",
@@ -502,7 +422,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.828943%2C38.917136%2C-104.823747%2C38.919830&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-032",
+      "id": "colorado-027",
       "title": "Single Family in Colorado Springs",
       "address": "11508 Black Maple Ln",
       "city": "Colorado Springs",
@@ -518,7 +438,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.794526%2C38.997627%2C-104.792562%2C38.998645&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-033",
+      "id": "colorado-028",
       "title": "Single Family in Manitou Springs",
       "address": "1417 Forest Rd",
       "city": "Manitou Springs",
@@ -534,7 +454,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.941216%2C38.828622%2C-104.939256%2C38.829640&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-034",
+      "id": "colorado-029",
       "title": "Single Family in Colorado Springs",
       "address": "8231 Perry Owens Dr",
       "city": "Colorado Springs",
@@ -550,7 +470,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.668113%2C38.971791%2C-104.666149%2C38.972809&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-035",
+      "id": "colorado-030",
       "title": "Single Family in Colorado Springs",
       "address": "1917 E Cache La Poudre St",
       "city": "Colorado Springs",
@@ -566,7 +486,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.792961%2C38.844168%2C-104.791001%2C38.845186&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-036",
+      "id": "colorado-031",
       "title": "Single Family in Colorado Springs",
       "address": "7410 Gorgeted Quail Grv",
       "city": "Colorado Springs",
@@ -582,7 +502,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.698735%2C38.938757%2C-104.696771%2C38.939775&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-037",
+      "id": "colorado-032",
       "title": "Single Family in Colorado Springs",
       "address": "2173 Arikaree Hts",
       "city": "Colorado Springs",
@@ -598,7 +518,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.789190%2C38.986359%2C-104.787226%2C38.987377&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-038",
+      "id": "colorado-033",
       "title": "Single Family in Monument",
       "address": "54 S Washington St",
       "city": "Monument",
@@ -614,7 +534,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.873081%2C39.087249%2C-104.871113%2C39.088267&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-039",
+      "id": "colorado-034",
       "title": "Single Family in Colorado Springs",
       "address": "9144 Vanderwood Rd",
       "city": "Colorado Springs",
@@ -630,7 +550,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.692474%2C38.951902%2C-104.690510%2C38.952920&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-040",
+      "id": "colorado-035",
       "title": "Single Family in Colorado Springs",
       "address": "9234 Galley Pl",
       "city": "Colorado Springs",
@@ -646,7 +566,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.709770%2C38.964698%2C-104.707806%2C38.965716&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-041",
+      "id": "colorado-036",
       "title": "Single Family in Monument",
       "address": "19534 Lindenmere Dr",
       "city": "Monument",
@@ -662,7 +582,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.863343%2C39.115879%2C-104.861375%2C39.116897&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-042",
+      "id": "colorado-037",
       "title": "Townhouse in Colorado Springs",
       "address": "7960 School House Dr",
       "city": "Colorado Springs",
@@ -678,7 +598,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.677736%2C38.956961%2C-104.675772%2C38.957979&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-043",
+      "id": "colorado-038",
       "title": "Single Family in Colorado Springs",
       "address": "1830 Brantfeather Grv",
       "city": "Colorado Springs",
@@ -694,7 +614,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.864498%2C38.807562%2C-104.862538%2C38.808580&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-044",
+      "id": "colorado-039",
       "title": "Single Family in Colorado Springs",
       "address": "6460 Cribbage Trl",
       "city": "Colorado Springs",
@@ -710,7 +630,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.708822%2C38.968874%2C-104.706858%2C38.969892&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-045",
+      "id": "colorado-040",
       "title": "Townhouse in Colorado Springs",
       "address": "150 Luxury Ln",
       "city": "Colorado Springs",
@@ -726,23 +646,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.828400%2C39.031055%2C-104.826434%2C39.032073&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-046",
-      "title": "Land in Colorado Springs",
-      "address": "1420 Point Of The Pines Dr",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 12.16,
-      "price": 6000000,
-      "latitude": 38.909863,
-      "longitude": -104.854412,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.855393%2C38.909354%2C-104.853431%2C38.910372&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-047",
+      "id": "colorado-041",
       "title": "Single Family in Yoder",
       "address": "4520 N Ramah Hwy",
       "city": "Yoder",
@@ -758,23 +662,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.152960%2C38.898653%2C-104.150998%2C38.899671&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-048",
-      "title": "Land in Peyton",
-      "address": "11485 Owl Pl",
-      "city": "Peyton",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 5,
-      "price": 1075000,
-      "latitude": 38.945245,
-      "longitude": -104.613244,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.614226%2C38.944736%2C-104.612262%2C38.945754&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-049",
+      "id": "colorado-042",
       "title": "Single Family in Colorado Springs",
       "address": "10418 Hudson Yard Dr",
       "city": "Colorado Springs",
@@ -790,7 +678,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.719980%2C38.978209%2C-104.718016%2C38.979227&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-050",
+      "id": "colorado-043",
       "title": "Single Family in Fountain",
       "address": "9223 Waters Edge Dr",
       "city": "Fountain",
@@ -806,23 +694,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.687116%2C38.697958%2C-104.685160%2C38.698976&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-051",
-      "title": "Land in Calhan",
-      "address": "Tbd Soap Weed Rd",
-      "city": "Calhan",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 116,
-      "price": 440800,
-      "latitude": 39.036658,
-      "longitude": -104.337815,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.338798%2C39.036149%2C-104.336832%2C39.037167&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-052",
+      "id": "colorado-044",
       "title": "Single Family in Colorado Springs",
       "address": "2533 Patriot Hts",
       "city": "Colorado Springs",
@@ -838,7 +710,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.873079%2C38.831493%2C-104.871119%2C38.832511&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-053",
+      "id": "colorado-045",
       "title": "Single Family in Peyton",
       "address": "10862 Torreys Peak Way",
       "city": "Peyton",
@@ -854,23 +726,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.599717%2C38.987002%2C-104.597753%2C38.988020&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-054",
-      "title": "Land in Colorado Springs",
-      "address": "15505 S Cuerno Verde Vw",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 37.31,
-      "price": 314900,
-      "latitude": 38.603932,
-      "longitude": -104.919655,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.920632%2C38.603423%2C-104.918678%2C38.604441&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-055",
+      "id": "colorado-046",
       "title": "Single Family in Colorado Springs",
       "address": "101 Trump Ave",
       "city": "Colorado Springs",
@@ -886,7 +742,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.781166%2C38.833668%2C-104.779206%2C38.834686&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-056",
+      "id": "colorado-047",
       "title": "Single Family in Colorado Springs",
       "address": "495 Harvard St",
       "city": "Colorado Springs",
@@ -902,7 +758,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.719432%2C38.726016%2C-104.717474%2C38.727034&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-057",
+      "id": "colorado-048",
       "title": "Single Family in Colorado Springs",
       "address": "1239 Kelso Pl",
       "city": "Colorado Springs",
@@ -918,7 +774,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.806453%2C39.004072%2C-104.804487%2C39.005090&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-058",
+      "id": "colorado-049",
       "title": "Single Family in Monument",
       "address": "19340 Shadowood Dr",
       "city": "Monument",
@@ -934,23 +790,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.843610%2C39.111521%2C-104.841642%2C39.112539&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-059",
-      "title": "Land in Colorado Springs",
-      "address": "10958 Alamar Way",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 5.18,
-      "price": 355000,
-      "latitude": 39.079473,
-      "longitude": -104.622136,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.623120%2C39.078964%2C-104.621152%2C39.079982&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-060",
+      "id": "colorado-050",
       "title": "Single Family in Colorado Springs",
       "address": "6843 Lily Mountain Ln",
       "city": "Colorado Springs",
@@ -966,7 +806,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.716612%2C38.929780%2C-104.714648%2C38.930798&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-061",
+      "id": "colorado-051",
       "title": "Townhouse in Colorado Springs",
       "address": "5102 Rainbow Harbour Cir",
       "city": "Colorado Springs",
@@ -982,7 +822,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.733360%2C38.894570%2C-104.731398%2C38.895588&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-062",
+      "id": "colorado-052",
       "title": "Single Family in Colorado Springs",
       "address": "6684 Lucky Star Ln",
       "city": "Colorado Springs",
@@ -998,7 +838,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.690087%2C38.927755%2C-104.688123%2C38.928773&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-063",
+      "id": "colorado-053",
       "title": "Single Family in Manitou Springs",
       "address": "815 Midland Ave",
       "city": "Manitou Springs",
@@ -1014,7 +854,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.918027%2C38.854206%2C-104.916065%2C38.855224&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-064",
+      "id": "colorado-054",
       "title": "Single Family in Monument",
       "address": "18320 Sloan Ln",
       "city": "Monument",
@@ -1030,7 +870,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.841884%2C39.096985%2C-104.839916%2C39.098003&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-065",
+      "id": "colorado-055",
       "title": "Single Family in Colorado Springs",
       "address": "10409 Marshall Mesa Ct",
       "city": "Colorado Springs",
@@ -1046,7 +886,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.757363%2C38.982562%2C-104.755399%2C38.983580&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-066",
+      "id": "colorado-056",
       "title": "Single Family in Colorado Springs",
       "address": "5459 Sidewinder Dr",
       "city": "Colorado Springs",
@@ -1062,7 +902,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.680837%2C38.751993%2C-104.678879%2C38.753011&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-067",
+      "id": "colorado-057",
       "title": "Single Family in Colorado Springs",
       "address": "7155 Omaha Blvd",
       "city": "Colorado Springs",
@@ -1078,7 +918,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.695760%2C38.853259%2C-104.693798%2C38.854277&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-068",
+      "id": "colorado-058",
       "title": "Single Family in Monument",
       "address": "244 Mitchell Ave",
       "city": "Monument",
@@ -1094,23 +934,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.873517%2C39.083755%2C-104.871549%2C39.084773&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-069",
-      "title": "Land in Colorado Springs",
-      "address": "18763 Brown Rd",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 10,
-      "price": 391000,
-      "latitude": 39.101984,
-      "longitude": -104.717182,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.718166%2C39.101475%2C-104.716198%2C39.102493&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-070",
+      "id": "colorado-059",
       "title": "Single Family in Colorado Springs",
       "address": "9424 Traveler Ter",
       "city": "Colorado Springs",
@@ -1126,23 +950,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.653983%2C38.942740%2C-104.652019%2C38.943758&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-071",
-      "title": "Land in Calhan",
-      "address": "12155 Oil Well Rd",
-      "city": "Calhan",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 60,
-      "price": 305000,
-      "latitude": 39.004234,
-      "longitude": -104.105446,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.106429%2C39.003725%2C-104.104463%2C39.004743&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-072",
+      "id": "colorado-060",
       "title": "Single Family in Colorado Springs",
       "address": "8856 Country Creek Trl",
       "city": "Colorado Springs",
@@ -1158,7 +966,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.714880%2C38.960638%2C-104.712916%2C38.961656&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-073",
+      "id": "colorado-061",
       "title": "Single Family in Peyton",
       "address": "9745 Porch Swing Ln",
       "city": "Peyton",
@@ -1174,7 +982,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.590994%2C38.970974%2C-104.589030%2C38.971992&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-074",
+      "id": "colorado-062",
       "title": "Single Family in Colorado Springs",
       "address": "622 Paradise Ln",
       "city": "Colorado Springs",
@@ -1190,23 +998,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.860722%2C38.856058%2C-104.858760%2C38.857076&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-075",
-      "title": "Multi-Family in Colorado Springs",
-      "address": "2532 W Colorado Ave",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": 1900,
-      "lotSizeAcres": 0.08,
-      "price": 2395000,
-      "latitude": 38.848282,
-      "longitude": -104.86378,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.866375%2C38.846935%2C-104.861185%2C38.849629&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-076",
+      "id": "colorado-063",
       "title": "Single Family in Colorado Springs",
       "address": "6905 Alpaca Hts",
       "city": "Colorado Springs",
@@ -1222,7 +1014,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.699928%2C39.064276%2C-104.697962%2C39.065294&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-077",
+      "id": "colorado-064",
       "title": "Single Family in Peyton",
       "address": "11112 Rolling Ranch Dr",
       "city": "Peyton",
@@ -1238,7 +1030,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.585790%2C38.989840%2C-104.583826%2C38.990858&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-078",
+      "id": "colorado-065",
       "title": "Multi-Family in Colorado Springs",
       "address": "13632 Flurry Hts",
       "city": "Colorado Springs",
@@ -1254,7 +1046,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.782746%2C39.029010%2C-104.777542%2C39.031704&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-079",
+      "id": "colorado-066",
       "title": "Single Family in Colorado Springs",
       "address": "1344 Sunshine Valley Way",
       "city": "Colorado Springs",
@@ -1270,7 +1062,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.803184%2C38.995528%2C-104.801220%2C38.996546&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-080",
+      "id": "colorado-067",
       "title": "Single Family in Peyton",
       "address": "11210 Eggar Dr",
       "city": "Peyton",
@@ -1286,23 +1078,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.620686%2C38.915459%2C-104.618724%2C38.916477&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-081",
-      "title": "Land in Colorado Springs",
-      "address": "1180 Crawford Ave",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 1.16,
-      "price": 399000,
-      "latitude": 38.749631,
-      "longitude": -104.720548,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.721527%2C38.749122%2C-104.719569%2C38.750140&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-082",
+      "id": "colorado-068",
       "title": "Multi-Family in Colorado Springs",
       "address": "2413 E Saint Vrain St",
       "city": "Colorado Springs",
@@ -1318,7 +1094,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.787609%2C38.838148%2C-104.782419%2C38.840842&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-083",
+      "id": "colorado-069",
       "title": "Single Family in Colorado Springs",
       "address": "515 N Franklin St",
       "city": "Colorado Springs",
@@ -1334,7 +1110,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.812175%2C38.840832%2C-104.810215%2C38.841850&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-084",
+      "id": "colorado-070",
       "title": "Single Family in Colorado Springs",
       "address": "10384 Horton Dr",
       "city": "Colorado Springs",
@@ -1350,7 +1126,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.637128%2C38.730452%2C-104.635170%2C38.731470&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-085",
+      "id": "colorado-071",
       "title": "Single Family in Peyton",
       "address": "13390 Savannah Falls Ct",
       "city": "Peyton",
@@ -1366,7 +1142,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.580347%2C38.984816%2C-104.578383%2C38.985834&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-086",
+      "id": "colorado-072",
       "title": "Single Family in Colorado Springs",
       "address": "622 Paradise Ln",
       "city": "Colorado Springs",
@@ -1382,7 +1158,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.860752%2C38.856057%2C-104.858790%2C38.857075&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-087",
+      "id": "colorado-073",
       "title": "Single Family in Colorado Springs",
       "address": "2338 Jeanette Way",
       "city": "Colorado Springs",
@@ -1398,7 +1174,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.669088%2C38.865642%2C-104.667126%2C38.866660&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-088",
+      "id": "colorado-074",
       "title": "Single Family in Colorado Springs",
       "address": "670 E Baptist Rd",
       "city": "Colorado Springs",
@@ -1414,7 +1190,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.815142%2C39.057631%2C-104.813176%2C39.058649&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-089",
+      "id": "colorado-075",
       "title": "Single Family in Peyton",
       "address": "8654 Champie Rd",
       "city": "Peyton",
@@ -1430,7 +1206,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.596536%2C38.956988%2C-104.594572%2C38.958006&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-090",
+      "id": "colorado-076",
       "title": "Single Family in Colorado Springs",
       "address": "8270 Regiment Ct",
       "city": "Colorado Springs",
@@ -1446,7 +1222,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.788398%2C38.951094%2C-104.786434%2C38.952112&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-091",
+      "id": "colorado-077",
       "title": "Single Family in Colorado Springs",
       "address": "2305 Falkirk Dr",
       "city": "Colorado Springs",
@@ -1462,7 +1238,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.785741%2C38.809531%2C-104.783781%2C38.810549&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-092",
+      "id": "colorado-078",
       "title": "Multi-Family in Colorado Springs",
       "address": "2405 2403 St E",
       "city": "Colorado Springs",
@@ -1478,7 +1254,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.788053%2C38.838007%2C-104.782863%2C38.840701&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-093",
+      "id": "colorado-079",
       "title": "Multi-Family in Colorado Springs",
       "address": "421 S Prospect St",
       "city": "Colorado Springs",
@@ -1494,7 +1270,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.813020%2C38.825635%2C-104.807832%2C38.828329&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-094",
+      "id": "colorado-080",
       "title": "Condo in Colorado Springs",
       "address": "5940 Eagle Glen Vw",
       "city": "Colorado Springs",
@@ -1510,23 +1286,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.828943%2C38.916716%2C-104.823747%2C38.919410&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-095",
-      "title": "Land in Colorado Springs",
-      "address": "6960 Alpaca Hts",
-      "city": "Colorado Springs",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 4.85,
-      "price": 379000,
-      "latitude": 39.065923,
-      "longitude": -104.700025,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.701008%2C39.065414%2C-104.699042%2C39.066432&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-096",
+      "id": "colorado-081",
       "title": "Single Family in Colorado Springs",
       "address": "9335 S Peyton Rd",
       "city": "Colorado Springs",
@@ -1542,39 +1302,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.459507%2C38.694518%2C-104.457551%2C38.695536&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-097",
-      "title": "Land in Monument",
-      "address": "331 Grandwood Dr",
-      "city": "Monument",
-      "state": "CO",
-      "beds": 4,
-      "baths": 3.5,
-      "sqft": 5466,
-      "yearBuilt": 2026,
-      "lotSizeAcres": 2.52,
-      "price": 348000,
-      "latitude": 39.079084,
-      "longitude": -104.818476,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.819460%2C39.078575%2C-104.817492%2C39.079593&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-098",
-      "title": "Land in Calhan",
-      "address": "8425 N Ellicott Hwy",
-      "city": "Calhan",
-      "state": "CO",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 38.08,
-      "price": 425000,
-      "latitude": 38.95332843,
-      "longitude": -104.3855179,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.386500%2C38.952819%2C-104.384536%2C38.953837&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "colorado-099",
+      "id": "colorado-082",
       "title": "Single Family in Peyton",
       "address": "10417 Mt Lincoln Dr",
       "city": "Peyton",
@@ -1590,7 +1318,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-104.588104%2C38.981795%2C-104.586140%2C38.982813&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "colorado-100",
+      "id": "colorado-083",
       "title": "Multi-Family in Manitou Springs",
       "address": "358 Ruxton Ave",
       "city": "Manitou Springs",

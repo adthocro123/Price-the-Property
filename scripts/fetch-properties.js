@@ -53,6 +53,12 @@ function viewWidthMeters(propertyType) {
 // and multiple values use "a|b" (see developers.rentcast.io).
 const LISTINGS_PER_PACK = 100;
 
+// Property types that make sense to price in a game about homes. Anything
+// else (notably "Land") is filtered out both in the query and again after
+// the fetch, since a vacant lot has no beds, baths or floor area to go on.
+const HOME_TYPES = "Single Family|Condo|Townhouse|Multi-Family";
+const EXCLUDED_TYPES = ["Land"];
+
 const PACKS = [
   {
     key: "standard",
@@ -80,6 +86,7 @@ const PACKS = [
     label: "Hawaii Expansion",
     rentcastParams: {
       state: "HI",
+      propertyType: HOME_TYPES,
       price: "400000:10000000"
     },
     priceRange: [400000, 10000000]
@@ -91,6 +98,7 @@ const PACKS = [
     rentcastParams: {
       city: "New York",
       state: "NY",
+      propertyType: HOME_TYPES,
       price: "200000:15000000"
     },
     priceRange: [200000, 15000000]
@@ -101,6 +109,7 @@ const PACKS = [
     label: "Colorado Collection",
     rentcastParams: {
       state: "CO",
+      propertyType: HOME_TYPES,
       price: "300000:10000000"
     },
     priceRange: [300000, 10000000]
@@ -229,12 +238,29 @@ async function buildPack(pack) {
   const results = await rentcastSearch(pack.rentcastParams);
   const [minPrice, maxPrice] = pack.priceRange;
 
-  // Belt-and-braces price check in case a server-side filter is ever ignored,
-  // plus coordinates are required — without them there's no aerial photo.
-  const usable = results.filter(l =>
-    l.price && l.price >= minPrice && l.price <= maxPrice &&
-    typeof l.latitude === "number" && typeof l.longitude === "number"
-  );
+  const seenSpots = new Set();
+  const usable = results.filter(l => {
+    // Belt-and-braces price check in case a server-side filter is ever ignored.
+    if (!l.price || l.price < minPrice || l.price > maxPrice) return false;
+
+    // No coordinates means no aerial photo of the place.
+    if (typeof l.latitude !== "number" || typeof l.longitude !== "number") return false;
+
+    // Vacant land is unguessable in a game about pricing homes: no beds, no
+    // baths, no floor area, and an aerial photo of an empty field.
+    if (EXCLUDED_TYPES.includes(l.propertyType)) return false;
+
+    // Every listing needs at least one hard number to reason from.
+    if (!l.squareFootage && !l.bedrooms) return false;
+
+    // One listing per spot. Condo towers return many units at identical
+    // coordinates, which would otherwise show the same photo twice in a run
+    // with two different "right" answers.
+    const spot = `${l.latitude.toFixed(5)},${l.longitude.toFixed(5)}`;
+    if (seenSpots.has(spot)) return false;
+    seenSpots.add(spot);
+    return true;
+  });
 
   if (usable.length === 0) {
     console.warn(`  No listings matched pack "${pack.key}" — keeping existing file untouched.`);

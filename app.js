@@ -472,7 +472,11 @@ function loadRound() {
       item.sqft ? `${item.sqft.toLocaleString()} sqft` : null
     ].filter(Boolean);
     secondaryChips = [
-      item.yearBuilt ? `Built ${item.yearBuilt}` : null,
+      // Pre-construction listings carry a completion year in the future, so
+      // "Built 2028" would read as a typo rather than a new build.
+      item.yearBuilt
+        ? (item.yearBuilt > new Date().getFullYear() ? `Completing ${item.yearBuilt}` : `Built ${item.yearBuilt}`)
+        : null,
       item.lotSizeAcres ? `${item.lotSizeAcres} ac lot` : null
     ].filter(Boolean);
   }
@@ -587,7 +591,7 @@ function submitGuess() {
     : (pts >= 900 ? "Bullseye!" : pts >= 500 ? "Nice guess!" : "Not bad!");
   document.getElementById("result-subtext").textContent = over
     ? "You went over — that's $0 for this one."
-    : `You were within ${Math.round(Math.abs(actual - guess) / actual * 100)}% of the actual price.`;
+    : `You were within ${Math.round(Math.abs(actual - guess) / actual * 100)}% of the asking price.`;
   document.getElementById("result-your-guess").textContent = "$" + guess.toLocaleString();
   document.getElementById("result-actual-price").textContent = "$" + actual.toLocaleString();
   document.getElementById("result-points").textContent = pts.toLocaleString();

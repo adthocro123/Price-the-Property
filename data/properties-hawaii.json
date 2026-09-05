@@ -120,22 +120,6 @@
     {
       "id": "hawaii-008",
       "title": "Condo in Honolulu",
-      "address": "440 Olohana St",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 313,
-      "yearBuilt": 1977,
-      "lotSizeAcres": 0,
-      "price": 450000,
-      "latitude": 21.284494,
-      "longitude": -157.830206,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.832375%2C21.283147%2C-157.828037%2C21.285841&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-009",
-      "title": "Condo in Honolulu",
       "address": "520 Lunalilo Home Rd",
       "city": "Honolulu",
       "state": "HI",
@@ -150,7 +134,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.702438%2C21.284673%2C-157.698100%2C21.287367&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-010",
+      "id": "hawaii-009",
       "title": "Single Family in Waianae",
       "address": "84-1035 Lahaina St",
       "city": "Waianae",
@@ -166,7 +150,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.208354%2C21.462889%2C-158.206714%2C21.463907&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-011",
+      "id": "hawaii-010",
       "title": "Condo in Honolulu",
       "address": "421 Olohana St",
       "city": "Honolulu",
@@ -182,7 +166,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.831988%2C21.282622%2C-157.827650%2C21.285316&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-012",
+      "id": "hawaii-011",
       "title": "Condo in Honolulu",
       "address": "1189 Waimanu St",
       "city": "Honolulu",
@@ -198,7 +182,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.850583%2C21.291720%2C-157.846245%2C21.294414&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-013",
+      "id": "hawaii-012",
       "title": "Condo in Kaneohe",
       "address": "44-350 Olina St",
       "city": "Kaneohe",
@@ -214,7 +198,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.764578%2C21.422656%2C-157.760236%2C21.425350&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-014",
+      "id": "hawaii-013",
       "title": "Single Family in Waimanalo",
       "address": "41-046 Hihimanu St",
       "city": "Waimanalo",
@@ -230,7 +214,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.702136%2C21.337960%2C-157.700496%2C21.338978&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-015",
+      "id": "hawaii-014",
       "title": "Condo in Honolulu",
       "address": "223 Saratoga Rd",
       "city": "Honolulu",
@@ -246,7 +230,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.834255%2C21.278058%2C-157.829917%2C21.280752&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-016",
+      "id": "hawaii-015",
       "title": "Condo in Kahuku",
       "address": "57-077 Eleku Kuilima Pl",
       "city": "Kahuku",
@@ -262,7 +246,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.995644%2C21.699846%2C-157.991294%2C21.702540&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-017",
+      "id": "hawaii-016",
       "title": "Condo in Honolulu",
       "address": "1777 Ala Moana Blvd",
       "city": "Honolulu",
@@ -278,7 +262,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.840795%2C21.282850%2C-157.836457%2C21.285544&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-018",
+      "id": "hawaii-017",
       "title": "Single Family in Kaneohe",
       "address": "47-483 Pakai Pl",
       "city": "Kaneohe",
@@ -294,7 +278,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.842011%2C21.437094%2C-157.840371%2C21.438112&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-019",
+      "id": "hawaii-018",
       "title": "Single Family in Ewa Beach",
       "address": "91-1299 Halili St",
       "city": "Ewa Beach",
@@ -310,23 +294,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.023139%2C21.306591%2C-158.021499%2C21.307609&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-020",
-      "title": "Land in Honolulu",
-      "address": "5404 Poola St",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0,
-      "price": 1999999,
-      "latitude": 21.283564,
-      "longitude": -157.760528,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.761347%2C21.283055%2C-157.759709%2C21.284073&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-021",
+      "id": "hawaii-019",
       "title": "Condo in Honolulu",
       "address": "2427 Kuhio Ave",
       "city": "Honolulu",
@@ -342,7 +310,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.826026%2C21.275146%2C-157.821688%2C21.277840&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-022",
+      "id": "hawaii-020",
       "title": "Condo in Ewa Beach",
       "address": "91-196 Makalea St",
       "city": "Ewa Beach",
@@ -358,7 +326,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.019280%2C21.336177%2C-158.014940%2C21.338871&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-023",
+      "id": "hawaii-021",
       "title": "Condo in Honolulu",
       "address": "1330 Ala Moana Blvd",
       "city": "Honolulu",
@@ -374,7 +342,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.851046%2C21.290695%2C-157.846708%2C21.293389&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-024",
+      "id": "hawaii-022",
       "title": "Condo in Honolulu",
       "address": "629 Keeaumoku St",
       "city": "Honolulu",
@@ -390,7 +358,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.843799%2C21.292686%2C-157.839461%2C21.295380&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-025",
+      "id": "hawaii-023",
       "title": "Single Family in Waianae",
       "address": "87-116 Kulapa Pl",
       "city": "Waianae",
@@ -406,7 +374,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.168741%2C21.406514%2C-158.167101%2C21.407532&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-026",
+      "id": "hawaii-024",
       "title": "Condo in Honolulu",
       "address": "1448 2 Hunakai St",
       "city": "Honolulu",
@@ -422,7 +390,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.788891%2C21.281080%2C-157.784553%2C21.283774&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-027",
+      "id": "hawaii-025",
       "title": "Condo in Honolulu",
       "address": "2439 Kapiolani Blvd",
       "city": "Honolulu",
@@ -438,7 +406,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.827858%2C21.285877%2C-157.823520%2C21.288571&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-028",
+      "id": "hawaii-026",
       "title": "Single Family in Honolulu",
       "address": "709 Twin View Dr",
       "city": "Honolulu",
@@ -454,7 +422,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.853007%2C21.330162%2C-157.851367%2C21.331180&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-029",
+      "id": "hawaii-027",
       "title": "Single Family in Ewa Beach",
       "address": "91-1747 Mee St",
       "city": "Ewa Beach",
@@ -470,7 +438,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.034961%2C21.357563%2C-158.033321%2C21.358581&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-030",
+      "id": "hawaii-028",
       "title": "Condo in Honolulu",
       "address": "3003 Kalakaua Ave",
       "city": "Honolulu",
@@ -486,7 +454,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.821542%2C21.258115%2C-157.817204%2C21.260809&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-031",
+      "id": "hawaii-029",
       "title": "Single Family in Ewa Beach",
       "address": "91-249 Ewa Beach Rd",
       "city": "Ewa Beach",
@@ -502,23 +470,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.997992%2C21.312228%2C-157.996352%2C21.313246&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-032",
-      "title": "Condo in Honolulu",
-      "address": "1777 Ala Moana Blvd",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 1,
-      "baths": 1,
-      "sqft": 500,
-      "yearBuilt": 1964,
-      "lotSizeAcres": 0,
-      "price": 650000,
-      "latitude": 21.284197,
-      "longitude": -157.838626,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.840795%2C21.282850%2C-157.836457%2C21.285544&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-033",
+      "id": "hawaii-030",
       "title": "Condo in Honolulu",
       "address": "1540 Magazine Sts",
       "city": "Honolulu",
@@ -534,7 +486,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.847768%2C21.306709%2C-157.843428%2C21.309403&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-034",
+      "id": "hawaii-031",
       "title": "Condo in Honolulu",
       "address": "2801 Coconut Ave",
       "city": "Honolulu",
@@ -550,7 +502,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.820542%2C21.256613%2C-157.816204%2C21.259307&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-035",
+      "id": "hawaii-032",
       "title": "Multi-Family in Kailua",
       "address": "54 Maluniu Ave",
       "city": "Kailua",
@@ -566,7 +518,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.743609%2C21.396154%2C-157.739267%2C21.398848&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-036",
+      "id": "hawaii-033",
       "title": "Condo in Honolulu",
       "address": "1388 Ala Moana Blvd",
       "city": "Honolulu",
@@ -582,7 +534,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.848340%2C21.289557%2C-157.844002%2C21.292251&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-037",
+      "id": "hawaii-034",
       "title": "Single Family in Waianae",
       "address": "87-1423 Akowai Rd",
       "city": "Waianae",
@@ -598,7 +550,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.165636%2C21.397354%2C-158.163996%2C21.398372&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-038",
+      "id": "hawaii-035",
       "title": "Single Family in Waianae",
       "address": "84-873 Hanalei St",
       "city": "Waianae",
@@ -614,39 +566,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.212274%2C21.465320%2C-158.210634%2C21.466338&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-039",
-      "title": "Land in Waianae",
-      "address": "87-2014 Farrington Hwy",
-      "city": "Waianae",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0.65,
-      "price": 896000,
-      "latitude": 21.388502,
-      "longitude": -158.151472,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.152292%2C21.387993%2C-158.150652%2C21.389011&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-040",
-      "title": "Multi-Family in Waipahu",
-      "address": "94-825 Waipahu St",
-      "city": "Waipahu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": 1963,
-      "lotSizeAcres": 0,
-      "price": 2900000,
-      "latitude": 21.384996,
-      "longitude": -158.008548,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.010719%2C21.383649%2C-158.006377%2C21.386343&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-041",
+      "id": "hawaii-036",
       "title": "Condo in Waipahu",
       "address": "94-835 Lumiauau St",
       "city": "Waipahu",
@@ -662,23 +582,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.002165%2C21.403037%2C-157.997823%2C21.405731&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-042",
-      "title": "Condo in Kapolei",
-      "address": "92-104 Waialii Pl",
-      "city": "Kapolei",
-      "state": "HI",
-      "beds": 3,
-      "baths": 3,
-      "sqft": 1484,
-      "yearBuilt": 2007,
-      "lotSizeAcres": 0,
-      "price": 2350000,
-      "latitude": 21.335151,
-      "longitude": -158.122079,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.124249%2C21.333804%2C-158.119909%2C21.336498&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-043",
+      "id": "hawaii-037",
       "title": "Condo in Honolulu",
       "address": "1538 Kapiolani Blvd",
       "city": "Honolulu",
@@ -694,7 +598,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.843050%2C21.291483%2C-157.838712%2C21.294177&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-044",
+      "id": "hawaii-038",
       "title": "Condo in Kaneohe",
       "address": "45-535 Luluku Rd",
       "city": "Kaneohe",
@@ -710,7 +614,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.803597%2C21.399373%2C-157.799255%2C21.402067&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-045",
+      "id": "hawaii-039",
       "title": "Single Family in Honolulu",
       "address": "1142 Kamaile St",
       "city": "Honolulu",
@@ -726,7 +630,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.846741%2C21.296174%2C-157.845101%2C21.297192&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-046",
+      "id": "hawaii-040",
       "title": "Condo in Honolulu",
       "address": "2215 Aloha Dr",
       "city": "Honolulu",
@@ -742,23 +646,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.830234%2C21.281057%2C-157.825896%2C21.283751&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-047",
-      "title": "Condo in Honolulu",
-      "address": "1777 Ala Moana Blvd",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 1,
-      "baths": 1,
-      "sqft": 500,
-      "yearBuilt": 1965,
-      "lotSizeAcres": 0,
-      "price": 718000,
-      "latitude": 21.284197,
-      "longitude": -157.838626,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.840795%2C21.282850%2C-157.836457%2C21.285544&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-048",
+      "id": "hawaii-041",
       "title": "Condo in Honolulu",
       "address": "2724 Kahoaloha Ln",
       "city": "Honolulu",
@@ -774,23 +662,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.823053%2C21.288477%2C-157.818715%2C21.291171&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-049",
-      "title": "Condo in Honolulu",
-      "address": "440 Olohana St",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 353,
-      "yearBuilt": 1977,
-      "lotSizeAcres": 0,
-      "price": 410000,
-      "latitude": 21.284494,
-      "longitude": -157.830206,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.832375%2C21.283147%2C-157.828037%2C21.285841&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-050",
+      "id": "hawaii-042",
       "title": "Condo in Honolulu",
       "address": "364 Seaside Ave",
       "city": "Honolulu",
@@ -806,7 +678,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.829667%2C21.278827%2C-157.825329%2C21.281521&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-051",
+      "id": "hawaii-043",
       "title": "Single Family in Honolulu",
       "address": "2618 Ferdinand Ave",
       "city": "Honolulu",
@@ -822,7 +694,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.820014%2C21.310022%2C-157.818374%2C21.311040&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-052",
+      "id": "hawaii-044",
       "title": "Condo in Honolulu",
       "address": "987 Queen St",
       "city": "Honolulu",
@@ -838,7 +710,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.855850%2C21.294526%2C-157.851512%2C21.297220&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-053",
+      "id": "hawaii-045",
       "title": "Condo in Honolulu",
       "address": "1201 Wilder Ave",
       "city": "Honolulu",
@@ -854,23 +726,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.841558%2C21.304500%2C-157.837220%2C21.307194&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-054",
-      "title": "Land in Kapolei",
-      "address": "92-612 Nohona St",
-      "city": "Kapolei",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0,
-      "price": 3750000,
-      "latitude": 21.356031,
-      "longitude": -158.091919,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.092739%2C21.355522%2C-158.091099%2C21.356540&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-055",
+      "id": "hawaii-046",
       "title": "Condo in Honolulu",
       "address": "1288 Kapiolani Blvd",
       "city": "Honolulu",
@@ -886,7 +742,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.848877%2C21.294652%2C-157.844539%2C21.297346&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-056",
+      "id": "hawaii-047",
       "title": "Condo in Honolulu",
       "address": "2465 Ala Wai Blvd",
       "city": "Honolulu",
@@ -902,7 +758,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.823412%2C21.275974%2C-157.819074%2C21.278668&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-057",
+      "id": "hawaii-048",
       "title": "Single Family in Aiea",
       "address": "98-628 Kuini St",
       "city": "Aiea",
@@ -918,23 +774,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.938913%2C21.397820%2C-157.937273%2C21.398838&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-058",
-      "title": "Condo in Honolulu",
-      "address": "629 Keeaumoku St",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 2,
-      "baths": 2,
-      "sqft": 916,
-      "yearBuilt": 2021,
-      "lotSizeAcres": 0,
-      "price": 960000,
-      "latitude": 21.294033,
-      "longitude": -157.84163,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.843799%2C21.292686%2C-157.839461%2C21.295380&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-059",
+      "id": "hawaii-049",
       "title": "Condo in Honolulu",
       "address": "88 Piikoi St",
       "city": "Honolulu",
@@ -950,103 +790,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.849901%2C21.291336%2C-157.845563%2C21.294030&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-060",
-      "title": "Multi-Family in Honolulu",
-      "address": "1103 10th Ave",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": 1921,
-      "lotSizeAcres": 0.13,
-      "price": 1584000,
-      "latitude": 21.282313,
-      "longitude": -157.801827,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.803996%2C21.280966%2C-157.799658%2C21.283660&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-061",
-      "title": "Multi-Family in Hauula",
-      "address": "54-11 Waikulama St",
-      "city": "Hauula",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": 1973,
-      "lotSizeAcres": 0.3,
-      "price": 1880000,
-      "latitude": 21.614177,
-      "longitude": -157.913223,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.915397%2C21.612830%2C-157.911049%2C21.615524&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-062",
-      "title": "Land in Wahiawa",
-      "address": "41 Lakeview Cir",
-      "city": "Wahiawa",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0.19,
-      "price": 650000,
-      "latitude": 21.49072,
-      "longitude": -158.035349,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.036170%2C21.490211%2C-158.034528%2C21.491229&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-063",
-      "title": "Land in Honolulu",
-      "address": "2002 Hunnewell St",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0.11,
-      "price": 835000,
-      "latitude": 21.301518,
-      "longitude": -157.823841,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.824661%2C21.301009%2C-157.823021%2C21.302027&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-064",
-      "title": "Condo in Honolulu",
-      "address": "1500 Rycroft St",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 2,
-      "baths": 2,
-      "sqft": 990,
-      "yearBuilt": 2025,
-      "lotSizeAcres": 0,
-      "price": 1555000,
-      "latitude": 21.296103,
-      "longitude": -157.840636,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.842805%2C21.294756%2C-157.838467%2C21.297450&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-065",
-      "title": "Condo in Honolulu",
-      "address": "223 Saratoga Rd",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 1,
-      "baths": 1,
-      "sqft": 795,
-      "yearBuilt": 2009,
-      "lotSizeAcres": 0,
-      "price": 1050000,
-      "latitude": 21.279405,
-      "longitude": -157.832086,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.834255%2C21.278058%2C-157.829917%2C21.280752&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-066",
+      "id": "hawaii-050",
       "title": "Condo in Kapolei",
       "address": "92-1010 Makakilo Dr",
       "city": "Kapolei",
@@ -1062,23 +806,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.088533%2C21.358647%2C-158.084193%2C21.361341&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-067",
-      "title": "Land in Honolulu",
-      "address": "4730 Halehoola Pl",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 13.64,
-      "price": 450000,
-      "latitude": 21.297747,
-      "longitude": -157.790291,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.791111%2C21.297238%2C-157.789471%2C21.298256&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-068",
+      "id": "hawaii-051",
       "title": "Single Family in Honolulu",
       "address": "3655 Nihipali Pl",
       "city": "Honolulu",
@@ -1094,23 +822,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.792411%2C21.294645%2C-157.790771%2C21.295663&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-069",
-      "title": "Condo in Honolulu",
-      "address": "2427 Kuhio Ave",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 356,
-      "yearBuilt": 1980,
-      "lotSizeAcres": 0,
-      "price": 570000,
-      "latitude": 21.276493,
-      "longitude": -157.823857,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.826026%2C21.275146%2C-157.821688%2C21.277840&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-070",
+      "id": "hawaii-052",
       "title": "Multi-Family in Honolulu",
       "address": "910 Kopke St",
       "city": "Honolulu",
@@ -1126,7 +838,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.881682%2C21.331331%2C-157.877342%2C21.334025&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-071",
+      "id": "hawaii-053",
       "title": "Condo in Honolulu",
       "address": "2969 Kalakaua Ave",
       "city": "Honolulu",
@@ -1142,7 +854,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.822082%2C21.259088%2C-157.817744%2C21.261782&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-072",
+      "id": "hawaii-054",
       "title": "Condo in Honolulu",
       "address": "229 Paoakalani Ave",
       "city": "Honolulu",
@@ -1158,7 +870,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.822515%2C21.272941%2C-157.818177%2C21.275635&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-073",
+      "id": "hawaii-055",
       "title": "Condo in Honolulu",
       "address": "431 Nahua St",
       "city": "Honolulu",
@@ -1174,7 +886,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.826770%2C21.278117%2C-157.822432%2C21.280811&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-074",
+      "id": "hawaii-056",
       "title": "Condo in Honolulu",
       "address": "500 University Ave",
       "city": "Honolulu",
@@ -1190,7 +902,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.829491%2C21.285544%2C-157.825153%2C21.288238&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-075",
+      "id": "hawaii-057",
       "title": "Single Family in Waianae",
       "address": "87-1446 Akowai Rd",
       "city": "Waianae",
@@ -1206,7 +918,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.164822%2C21.397590%2C-158.163182%2C21.398608&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-076",
+      "id": "hawaii-058",
       "title": "Condo in Ewa Beach",
       "address": "91-213 Hanapouli Cir",
       "city": "Ewa Beach",
@@ -1222,23 +934,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.027516%2C21.333035%2C-158.023176%2C21.335729&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-077",
-      "title": "Condo in Honolulu",
-      "address": "223 Saratoga Rd",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 510,
-      "yearBuilt": 2009,
-      "lotSizeAcres": 0,
-      "price": 540000,
-      "latitude": 21.279405,
-      "longitude": -157.832086,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.834255%2C21.278058%2C-157.829917%2C21.280752&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-078",
+      "id": "hawaii-059",
       "title": "Condo in Honolulu",
       "address": "1000 Ala Moana Blvd",
       "city": "Honolulu",
@@ -1254,23 +950,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.858796%2C21.293706%2C-157.854458%2C21.296400&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-079",
-      "title": "Land in Honolulu",
-      "address": "2755 Lai Rd",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0,
-      "price": 985000,
-      "latitude": 21.311041,
-      "longitude": -157.78444,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.785260%2C21.310532%2C-157.783620%2C21.311550&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-080",
+      "id": "hawaii-060",
       "title": "Condo in Honolulu",
       "address": "1296 Kapiolani Blvd",
       "city": "Honolulu",
@@ -1286,7 +966,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.848731%2C21.294879%2C-157.844393%2C21.297573&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-081",
+      "id": "hawaii-061",
       "title": "Condo in Mililani",
       "address": "94-149 Kuahelani Ave",
       "city": "Mililani",
@@ -1302,7 +982,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.018817%2C21.440611%2C-158.014475%2C21.443305&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-082",
+      "id": "hawaii-062",
       "title": "Condo in Waipahu",
       "address": "94-302 Paiwa St",
       "city": "Waipahu",
@@ -1318,7 +998,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.003745%2C21.387064%2C-157.999403%2C21.389758&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-083",
+      "id": "hawaii-063",
       "title": "Condo in Honolulu",
       "address": "2474 Kapiolani Blvd",
       "city": "Honolulu",
@@ -1334,7 +1014,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.826941%2C21.286467%2C-157.822603%2C21.289161&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-084",
+      "id": "hawaii-064",
       "title": "Multi-Family in Honolulu",
       "address": "2005 Stanley St",
       "city": "Honolulu",
@@ -1350,23 +1030,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.882526%2C21.330272%2C-157.878186%2C21.332966&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-085",
-      "title": "Condo in Honolulu",
-      "address": "987 Queen St",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 1,
-      "sqft": 347,
-      "yearBuilt": 2019,
-      "lotSizeAcres": 0,
-      "price": 560000,
-      "latitude": 21.295873,
-      "longitude": -157.853681,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.855850%2C21.294526%2C-157.851512%2C21.297220&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-086",
+      "id": "hawaii-065",
       "title": "Single Family in Honolulu",
       "address": "1309A Konia St",
       "city": "Honolulu",
@@ -1382,7 +1046,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.864300%2C21.332009%2C-157.862660%2C21.333027&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-087",
+      "id": "hawaii-066",
       "title": "Condo in Honolulu",
       "address": "2121 Ala Wai Blvd",
       "city": "Honolulu",
@@ -1398,7 +1062,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.830468%2C21.282086%2C-157.826130%2C21.284780&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-088",
+      "id": "hawaii-067",
       "title": "Single Family in Waialua",
       "address": "67-4 Kahaone Pl",
       "city": "Waialua",
@@ -1414,55 +1078,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.125070%2C21.582313%2C-158.123428%2C21.583331&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-089",
-      "title": "Multi-Family in Waipahu",
-      "address": "94-246 Aniani Pl",
-      "city": "Waipahu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": 1961,
-      "lotSizeAcres": 0.18,
-      "price": 2343563,
-      "latitude": 21.384089,
-      "longitude": -158.015437,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.017608%2C21.382742%2C-158.013266%2C21.385436&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-090",
-      "title": "Land in Honolulu",
-      "address": "4744 Kahala Ave",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0.46,
-      "price": 4750000,
-      "latitude": 21.267147,
-      "longitude": -157.780916,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.781735%2C21.266638%2C-157.780097%2C21.267656&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-091",
-      "title": "Condo in Honolulu",
-      "address": "1500 Rycroft St",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 2,
-      "baths": 2,
-      "sqft": 1074,
-      "yearBuilt": 2023,
-      "lotSizeAcres": 0,
-      "price": 1420000,
-      "latitude": 21.296103,
-      "longitude": -157.840636,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.842805%2C21.294756%2C-157.838467%2C21.297450&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-092",
+      "id": "hawaii-068",
       "title": "Condo in Honolulu",
       "address": "430 Keoniana St",
       "city": "Honolulu",
@@ -1478,7 +1094,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.834231%2C21.284310%2C-157.829893%2C21.287004&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-093",
+      "id": "hawaii-069",
       "title": "Single Family in Waialua",
       "address": "68-664 Hoomana Pl",
       "city": "Waialua",
@@ -1494,23 +1110,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.177768%2C21.579287%2C-158.176126%2C21.580305&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-094",
-      "title": "Land in Waianae",
-      "address": "87-153 Makona St",
-      "city": "Waianae",
-      "state": "HI",
-      "beds": 0,
-      "baths": 0,
-      "sqft": 0,
-      "yearBuilt": null,
-      "lotSizeAcres": 0,
-      "price": 799000,
-      "latitude": 21.423303,
-      "longitude": -158.175933,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.176753%2C21.422794%2C-158.175113%2C21.423812&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-095",
+      "id": "hawaii-070",
       "title": "Condo in Honolulu",
       "address": "600 Ala Moana Blvd",
       "city": "Honolulu",
@@ -1526,7 +1126,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.864436%2C21.297741%2C-157.860098%2C21.300435&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-096",
+      "id": "hawaii-071",
       "title": "Single Family in Laie",
       "address": "55-123 Naupaka St",
       "city": "Laie",
@@ -1542,7 +1142,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.920021%2C21.647873%2C-157.918377%2C21.648891&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-097",
+      "id": "hawaii-072",
       "title": "Single Family in Kaneohe",
       "address": "45-340 Lehuuila St",
       "city": "Kaneohe",
@@ -1558,7 +1158,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.787334%2C21.398399%2C-157.785694%2C21.399417&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-098",
+      "id": "hawaii-073",
       "title": "Condo in Honolulu",
       "address": "5333 Likini St",
       "city": "Honolulu",
@@ -1574,7 +1174,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.907183%2C21.345079%2C-157.902843%2C21.347773&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "hawaii-099",
+      "id": "hawaii-074",
       "title": "Condo in Honolulu",
       "address": "2139 Kuhio Ave",
       "city": "Honolulu",
@@ -1588,22 +1188,6 @@
       "latitude": 21.281836,
       "longitude": -157.829554,
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.831723%2C21.280489%2C-157.827385%2C21.283183&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "hawaii-100",
-      "title": "Condo in Honolulu",
-      "address": "229 Paoakalani Ave",
-      "city": "Honolulu",
-      "state": "HI",
-      "beds": 1,
-      "baths": 1,
-      "sqft": 546,
-      "yearBuilt": 1979,
-      "lotSizeAcres": 1.15,
-      "price": 649000,
-      "latitude": 21.274288,
-      "longitude": -157.820346,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.822515%2C21.272941%2C-157.818177%2C21.275635&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     }
   ]
 }

@@ -1319,22 +1319,6 @@
     },
     {
       "id": "historic-083",
-      "title": "Single Family in Green Valley Lake",
-      "address": "32983 Canyon Dr",
-      "city": "Green Valley Lake",
-      "state": "CA",
-      "beds": 4,
-      "baths": 1.5,
-      "sqft": 0,
-      "yearBuilt": 1940,
-      "lotSizeAcres": 0.35,
-      "price": 459000,
-      "latitude": 34.23816,
-      "longitude": -117.084596,
-      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-117.085520%2C34.237651%2C-117.083672%2C34.238669&bboxSR=4326&size=900%2C600&format=jpg&f=image"
-    },
-    {
-      "id": "historic-084",
       "title": "Single Family in La Crescenta",
       "address": "4033 Liberty Ave",
       "city": "La Crescenta",
@@ -1350,7 +1334,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-118.248514%2C34.219194%2C-118.246668%2C34.220212&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-085",
+      "id": "historic-084",
       "title": "Single Family in Tujunga",
       "address": "10558 Las Lunitas Ave",
       "city": "Tujunga",
@@ -1366,7 +1350,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-118.291907%2C34.260722%2C-118.290059%2C34.261740&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-086",
+      "id": "historic-085",
       "title": "Single Family in Houston",
       "address": "2012 Wichita St",
       "city": "Houston",
@@ -1382,7 +1366,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-95.378769%2C29.723214%2C-95.377011%2C29.724232&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-087",
+      "id": "historic-086",
       "title": "Single Family in Tujunga",
       "address": "7118 Valmont St",
       "city": "Tujunga",
@@ -1398,7 +1382,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-118.287488%2C34.251548%2C-118.285640%2C34.252566&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-088",
+      "id": "historic-087",
       "title": "Single Family in Los Angeles",
       "address": "1336 W 46th St",
       "city": "Los Angeles",
@@ -1414,7 +1398,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-118.300251%2C34.000864%2C-118.298409%2C34.001882&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-089",
+      "id": "historic-088",
       "title": "Single Family in Alhambra",
       "address": "1604 S Monterey St",
       "city": "Alhambra",
@@ -1430,7 +1414,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-118.121389%2C34.075262%2C-118.119545%2C34.076280&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-090",
+      "id": "historic-089",
       "title": "Single Family in Atlanta",
       "address": "561 Peachtree Battle Ave NW",
       "city": "Atlanta",
@@ -1446,7 +1430,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-84.406804%2C33.822312%2C-84.404966%2C33.823330&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-091",
+      "id": "historic-090",
       "title": "Single Family in Chicago",
       "address": "6136 S Richmond St",
       "city": "Chicago",
@@ -1462,7 +1446,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-87.698493%2C41.781070%2C-87.696445%2C41.782088&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-092",
+      "id": "historic-091",
       "title": "Single Family in Azusa",
       "address": "325 W Crescent Dr",
       "city": "Azusa",
@@ -1478,7 +1462,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-117.911539%2C34.137226%2C-117.909693%2C34.138244&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-093",
+      "id": "historic-092",
       "title": "Single Family in Pacoima",
       "address": "10353 Rincon Ave",
       "city": "Pacoima",
@@ -1494,7 +1478,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-118.431447%2C34.257735%2C-118.429599%2C34.258753&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-094",
+      "id": "historic-093",
       "title": "Single Family in Big Bear Lake",
       "address": "39900 Lakeview Dr",
       "city": "Big Bear Lake",
@@ -1510,7 +1494,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-116.932371%2C34.248214%2C-116.930523%2C34.249232&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-095",
+      "id": "historic-094",
       "title": "Single Family in Bellaire",
       "address": "4912 Bellaire Blvd",
       "city": "Bellaire",
@@ -1526,7 +1510,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-95.466461%2C29.705780%2C-95.464703%2C29.706798&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-096",
+      "id": "historic-095",
       "title": "Single Family in San Antonio",
       "address": "224 E Rische",
       "city": "San Antonio",
@@ -1542,7 +1526,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-98.498980%2C29.411598%2C-98.497226%2C29.412616&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-097",
+      "id": "historic-096",
       "title": "Single Family in Los Angeles",
       "address": "6303 Eileen Ave",
       "city": "Los Angeles",
@@ -1558,7 +1542,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-118.344075%2C33.982187%2C-118.342233%2C33.983205&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-098",
+      "id": "historic-097",
       "title": "Single Family in Burbank",
       "address": "523 E Fairmount Rd",
       "city": "Burbank",
@@ -1574,7 +1558,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-118.313380%2C34.190413%2C-118.311534%2C34.191431&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-099",
+      "id": "historic-098",
       "title": "Single Family in Saint Petersburg",
       "address": "3458 Queensboro Ave S",
       "city": "Saint Petersburg",
@@ -1590,7 +1574,7 @@
       "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-82.681561%2C27.752156%2C-82.679835%2C27.753174&bboxSR=4326&size=900%2C600&format=jpg&f=image"
     },
     {
-      "id": "historic-100",
+      "id": "historic-099",
       "title": "Single Family in Tampa",
       "address": "3203 E Yukon St",
       "city": "Tampa",
