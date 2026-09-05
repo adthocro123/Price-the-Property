@@ -233,7 +233,7 @@ function renderStore() {
       <button class="store-item-btn ${owned ? "owned-btn" : ""}" ${owned ? "disabled" : ""}>${owned ? "Owned" : "Unlock"}</button>
     `;
     if (!owned) {
-      row.querySelector("button").addEventListener("click", () => goToCheckout(pack.stripeLink, pack.name));
+      row.querySelector("button").addEventListener("click", () => goToCheckout(pack.stripeLink, pack.name, pack.key));
     }
     list.appendChild(row);
   });
@@ -252,14 +252,29 @@ function renderStore() {
     <button class="store-item-btn ${subOwned ? "owned-btn" : ""}" ${subOwned ? "disabled" : ""}>${subOwned ? "Active" : "Subscribe"}</button>
   `;
   if (!subOwned) {
-    subRow.querySelector("button").addEventListener("click", () => goToCheckout(sub.stripeLink, sub.name));
+    subRow.querySelector("button").addEventListener("click", () => goToCheckout(sub.stripeLink, sub.name, sub.key));
   }
   list.appendChild(subRow);
 }
 
-function goToCheckout(link, name) {
+function goToCheckout(link, name, unlockKey) {
   if (!link || link.includes("REPLACE")) {
-    showToast(`⚠️ Add a real Stripe Payment Link for "${name}" in app.js CONFIG first.`);
+    // No real Stripe Payment Link configured yet — grant a free test unlock
+    // instead, so the game is fully playable while payments aren't wired up.
+    // Once you paste a real stripeLink into CONFIG, this branch stops
+    // triggering and the button sends players to real Stripe checkout.
+    if (unlockKey === "pro") {
+      state.unlocked.pro = true;
+      state.unlocked.mansion = true;
+      state.unlocked.hawaii = true;
+      state.unlocked.car = true;
+    } else {
+      state.unlocked[unlockKey] = true;
+    }
+    persistSave();
+    showToast(`🧪 Test unlock: "${name}" is open for free. Add a real Stripe Payment Link in app.js before launch.`);
+    renderStore();
+    renderHome();
     return;
   }
   window.location.href = link;

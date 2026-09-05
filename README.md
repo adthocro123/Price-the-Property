@@ -60,9 +60,37 @@ There's no equivalent "RentCast for used cars," so the **Car Expansion**
 (`data/vehicles-car.json`) is meant to be edited by hand — add more entries
 in the same shape whenever you want fresh cars.
 
+**A security note on the Google Maps key specifically:** unlike the
+RentCast key (which only ever runs inside the private GitHub Actions job),
+the Street View key gets baked into each photo URL that the fetch script
+writes into `data/properties-*.json` — and that file is public, committed,
+and served directly to the browser. So this key *is* visible to anyone who
+looks, by design of how Street View Static images work. To limit the
+damage if someone copies it: in Google Cloud Console, open the key under
+**APIs & Services → Credentials** and add both restrictions:
+- **Application restrictions → HTTP referrers**: add
+  `https://adthocro123.github.io/*`, so the key only works when the request
+  actually came from your page.
+- **API restrictions**: limit it to just **Street View Static API**, so even
+  a leaked key can't be used against your other Google Cloud services.
+
+Also set a budget alert (**Billing → Budgets & alerts**) so you get an
+email if usage ever spikes unexpectedly.
+
 ## 4. Turn on real payments (DLCs + subscription)
 
 Payments are handled by **Stripe Payment Links** — no backend required.
+
+**Testing for free before you wire up Stripe:** as long as a pack's
+`stripeLink` in `app.js` still contains `REPLACE_...` (the default), tapping
+"Unlock"/"Subscribe" in the store grants that pack for free instead of going
+to checkout — a toast tells you it's a test unlock. This lets you fully play
+every expansion during development. The moment you paste in a real Payment
+Link, that button switches to real Stripe checkout automatically. You can
+also use **Stripe's own Test mode** (toggle in the dashboard) to build and
+click through a real checkout page with test card `4242 4242 4242 4242`
+(any future expiry/CVC/ZIP) without it charging anything — useful for
+testing the actual redirect-and-unlock flow end to end before going live.
 
 1. Create a free Stripe account: https://dashboard.stripe.com/register
 2. For each of the 4 products below, go to **Payment links → New**:
