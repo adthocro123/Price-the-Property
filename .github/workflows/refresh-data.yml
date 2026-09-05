@@ -2,8 +2,10 @@ name: Refresh property listings
 
 on:
   schedule:
-    # Every Monday at 13:00 UTC
-    - cron: "0 13 * * 1"
+    # Every 3 days at 13:00 UTC. Each run spends 3 RentCast calls (one per
+    # pack), so this stays well inside the free tier's 50 calls/month while
+    # keeping the listings cycling.
+    - cron: "0 13 */3 * *"
   workflow_dispatch:
 
 permissions:
@@ -24,7 +26,6 @@ jobs:
       - name: Fetch fresh listings
         env:
           RENTCAST_API_KEY: ${{ secrets.RENTCAST_API_KEY }}
-          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
         run: node scripts/fetch-properties.js
 
       - name: Commit updated data

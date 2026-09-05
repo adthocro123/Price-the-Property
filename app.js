@@ -390,6 +390,14 @@ function loadRound() {
   document.getElementById("property-pack-badge").textContent = pack.emoji + " " + pack.name;
   document.getElementById("property-title").textContent = item.title;
 
+  // Aerial photos are centred on the listed home, so show the reticle that
+  // tells players which house they're pricing. Vehicles use plain photos.
+  const isAerial = typeof item.latitude === "number" && typeof item.longitude === "number";
+  document.getElementById("property-pin").hidden = !isAerial;
+  document.getElementById("image-note").hidden = !isAerial;
+
+  // Real listing data has gaps that the demo data never did, so drop any
+  // detail that came back empty rather than rendering "Built null".
   let primaryChips, secondaryChips, subtitle;
   if (pack.type === "vehicle") {
     subtitle = `${item.year} • ${item.condition}`;
@@ -397,8 +405,15 @@ function loadRound() {
     secondaryChips = [];
   } else {
     subtitle = `${item.city}, ${item.state}`;
-    primaryChips = [`${item.beds} bd`, `${item.baths} ba`, `${item.sqft.toLocaleString()} sqft`];
-    secondaryChips = [`Built ${item.yearBuilt}`, `${item.lotSizeAcres} ac lot`];
+    primaryChips = [
+      item.beds ? `${item.beds} bd` : null,
+      item.baths ? `${item.baths} ba` : null,
+      item.sqft ? `${item.sqft.toLocaleString()} sqft` : null
+    ].filter(Boolean);
+    secondaryChips = [
+      item.yearBuilt ? `Built ${item.yearBuilt}` : null,
+      item.lotSizeAcres ? `${item.lotSizeAcres} ac lot` : null
+    ].filter(Boolean);
   }
   document.getElementById("property-address").textContent = subtitle;
   document.getElementById("detail-line").textContent = primaryChips.join(" • ");
@@ -406,6 +421,11 @@ function loadRound() {
   const divider = document.getElementById("detail-divider");
   secondaryLine.textContent = secondaryChips.join(" • ");
   divider.style.display = secondaryChips.length ? "" : "none";
+
+  // The USGS imagery server can take a beat, so warm the next round's photo
+  // while this one is being played.
+  const next = state.roundItems[state.roundIndex + 1];
+  if (next) new Image().src = next.item.image;
 
   const slider = document.getElementById("guess-slider");
   slider.min = 0;

@@ -16,7 +16,9 @@
       "yearBuilt": 2005,
       "lotSizeAcres": 0.14,
       "price": 240000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=26.897448%2C-82.046648&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-82.047504,26.896939,-82.045792,26.897957&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 26.897448,
+      "longitude": -82.046648
     },
     {
       "id": "standard-002",
@@ -30,7 +32,9 @@
       "yearBuilt": 1981,
       "lotSizeAcres": 1.05,
       "price": 165000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=26.803193%2C-82.275367&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-82.276222,26.802684,-82.274512,26.803702&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 26.803193,
+      "longitude": -82.275367
     },
     {
       "id": "standard-003",
@@ -44,7 +48,9 @@
       "yearBuilt": 2005,
       "lotSizeAcres": 0.17,
       "price": 239000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=26.905718%2C-82.041037&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-82.041893,26.905209,-82.040181,26.906227&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 26.905718,
+      "longitude": -82.041037
     },
     {
       "id": "standard-004",
@@ -58,7 +64,9 @@
       "yearBuilt": 2025,
       "lotSizeAcres": 0.22,
       "price": 575000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=26.908496%2C-82.28532&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-82.286176,26.907987,-82.284464,26.909005&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 26.908496,
+      "longitude": -82.28532
     },
     {
       "id": "standard-005",
@@ -72,7 +80,10 @@
       "yearBuilt": 2006,
       "lotSizeAcres": 0.23,
       "price": 324000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=26.777753%2C-82.042906&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-82.043761,26.777244,-82.042051,26.778262&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 26.777753,
+      "longitude": -82.042906
     }
-  ]
+  ],
+  "imagery": "USGS National Map (public domain)"
 }

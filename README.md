@@ -10,7 +10,7 @@ plain static site so it hosts for free on GitHub Pages.
 ```
 index.html / style.css / app.js   The game itself (no build step needed)
 data/*.json                       Property & vehicle listings the game reads
-scripts/fetch-properties.js       Pulls real listings from RentCast + Street View
+scripts/fetch-properties.js       Pulls real listings (RentCast) + aerial photos (USGS)
 .github/workflows/refresh-data.yml   Runs that script on a schedule
 .github/workflows/pages.yml       Deploys the site to GitHub Pages
 manifest.json / assets/icon.svg   "Add to Home Screen" support
@@ -39,43 +39,54 @@ charges on your account. The fix used here: **fetch the data ahead of
 time**, using a private automation (GitHub Actions) that has the keys, and
 have the game read the plain results. The browser never sees a key.
 
-## 3. Turn on real listings (RentCast + Street View)
+## 3. Turn on real listings (RentCast + free aerial photos)
 
-1. Get a RentCast API key: https://www.rentcast.io/api
-2. Get a Google Maps API key with the **Street View Static API** enabled:
-   https://console.cloud.google.com/ (billing must be enabled on the
-   project, but Google includes a monthly free credit that comfortably
-   covers a hobby-scale game).
-3. In your GitHub repo, go to **Settings → Secrets and variables →
-   Actions → New repository secret** and add:
-   - `RENTCAST_API_KEY`
-   - `GOOGLE_MAPS_API_KEY`
-4. Go to the **Actions** tab, open "Refresh property listings", and click
-   **Run workflow** to fetch immediately (it also runs automatically every
-   Monday). It commits fresh data straight into `data/*.json`.
-5. Adjust which listings show up per pack (city, state, price range) by
+**Only one key is needed, and the photos cost nothing.**
+
+1. Get a RentCast API key: https://www.rentcast.io/api (the free Developer
+   plan allows 50 API calls/month and needs no credit card).
+2. In your GitHub repo, go to **Settings → Secrets and variables →
+   Actions → New repository secret** and add `RENTCAST_API_KEY`.
+3. Go to the **Actions** tab, open "Refresh property listings", and click
+   **Run workflow** to fetch immediately. It also runs automatically every
+   3 days, committing fresh listings straight into `data/*.json`.
+4. Adjust what shows up per pack (price range, property type, state) by
    editing the `PACKS` array at the top of `scripts/fetch-properties.js`.
+   Those filters are sent to RentCast directly, so they search the whole
+   database rather than filtering a small sample.
+
+### Where the photos come from
+
+RentCast returns listing *data* but no photos (MLS photos are licensed by
+the listing brokerage, so no affordable API hands them out — and reusing
+them in a paid game would be a copyright problem).
+
+Instead, each listing's latitude/longitude is turned into a real aerial
+photo of that exact address from the **USGS National Map**. That imagery is
+US federal government work in the **public domain**: free forever, no API
+key, no billing account, no attribution required, and nothing secret ends
+up inside the committed data files. The game centres each photo on the home
+and draws a marker over the middle so players know which house is theirs.
+
+Because it's US-only imagery, it covers every listing RentCast returns
+(including Hawaii). Budget: **3 API calls per refresh** (one per pack), so
+running every 3 days uses about 30 of your 50 free monthly calls.
+
+### Want street-level photos instead?
+
+Google Street View is the obvious upgrade but needs a credit card on file,
+and its key would be visible inside every committed image URL. A free
+alternative is **Mapillary** (crowdsourced, open-licensed, free API token,
+no card) — the catch is that residential-street coverage is patchy, so
+you'd want to fall back to the aerial photo whenever a location has none.
+Ask me if you want that wired up.
 
 There's no equivalent "RentCast for used cars," so the **Car Expansion**
 (`data/vehicles-car.json`) is meant to be edited by hand — add more entries
 in the same shape whenever you want fresh cars.
 
-**A security note on the Google Maps key specifically:** unlike the
-RentCast key (which only ever runs inside the private GitHub Actions job),
-the Street View key gets baked into each photo URL that the fetch script
-writes into `data/properties-*.json` — and that file is public, committed,
-and served directly to the browser. So this key *is* visible to anyone who
-looks, by design of how Street View Static images work. To limit the
-damage if someone copies it: in Google Cloud Console, open the key under
-**APIs & Services → Credentials** and add both restrictions:
-- **Application restrictions → HTTP referrers**: add
-  `https://adthocro123.github.io/*`, so the key only works when the request
-  actually came from your page.
-- **API restrictions**: limit it to just **Street View Static API**, so even
-  a leaked key can't be used against your other Google Cloud services.
-
-Also set a budget alert (**Billing → Budgets & alerts**) so you get an
-email if usage ever spikes unexpectedly.
+Because the aerial imagery needs no key, the only secret this project has
+is `RENTCAST_API_KEY`, and it never leaves the GitHub Actions runner.
 
 ## 4. Turn on real payments (DLCs + subscription)
 

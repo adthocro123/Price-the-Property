@@ -16,7 +16,9 @@
       "yearBuilt": 1978,
       "lotSizeAcres": 0,
       "price": 488000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.277729%2C-157.823051&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.825220,21.276382,-157.820882,21.279076&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.277729,
+      "longitude": -157.823051
     },
     {
       "id": "hawaii-002",
@@ -30,7 +32,9 @@
       "yearBuilt": 2028,
       "lotSizeAcres": 0,
       "price": 736000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.295634%2C-157.857895&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.860064,21.294287,-157.855726,21.296981&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.295634,
+      "longitude": -157.857895
     },
     {
       "id": "hawaii-003",
@@ -44,7 +48,9 @@
       "yearBuilt": 2022,
       "lotSizeAcres": 0,
       "price": 1175000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.295108%2C-157.85433&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.856499,21.293761,-157.852161,21.296455&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.295108,
+      "longitude": -157.85433
     },
     {
       "id": "hawaii-004",
@@ -58,7 +64,9 @@
       "yearBuilt": 2027,
       "lotSizeAcres": 0,
       "price": 2398000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.295053%2C-157.856627&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.858796,21.293706,-157.854458,21.296400&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.295053,
+      "longitude": -157.856627
     },
     {
       "id": "hawaii-005",
@@ -72,7 +80,9 @@
       "yearBuilt": null,
       "lotSizeAcres": 0.12,
       "price": 450000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.441545%2C-158.17705&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.177870,21.441036,-158.176230,21.442054&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.441545,
+      "longitude": -158.17705
     },
     {
       "id": "hawaii-006",
@@ -86,7 +96,9 @@
       "yearBuilt": 1984,
       "lotSizeAcres": 0.28,
       "price": 3180000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.398329%2C-157.938093&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.938913,21.397820,-157.937273,21.398838&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.398329,
+      "longitude": -157.938093
     },
     {
       "id": "hawaii-007",
@@ -100,7 +112,9 @@
       "yearBuilt": 2027,
       "lotSizeAcres": 0,
       "price": 1520000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.295053%2C-157.856627&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.858796,21.293706,-157.854458,21.296400&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.295053,
+      "longitude": -157.856627
     },
     {
       "id": "hawaii-008",
@@ -114,7 +128,9 @@
       "yearBuilt": 2018,
       "lotSizeAcres": 0,
       "price": 2498000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.281836%2C-157.829554&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.831723,21.280489,-157.827385,21.283183&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.281836,
+      "longitude": -157.829554
     },
     {
       "id": "hawaii-009",
@@ -128,7 +144,9 @@
       "yearBuilt": 1969,
       "lotSizeAcres": 0.16,
       "price": 5000000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.303249%2C-157.84059&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-157.842759,21.301902,-157.838421,21.304596&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.303249,
+      "longitude": -157.84059
     },
     {
       "id": "hawaii-010",
@@ -142,7 +160,10 @@
       "yearBuilt": 2005,
       "lotSizeAcres": 0,
       "price": 1400000,
-      "image": "https://maps.googleapis.com/maps/api/streetview?size=900x600&location=21.341693%2C-158.118791&fov=80&key="
+      "image": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-158.120961,21.340346,-158.116621,21.343040&bboxSR=4326&size=900,600&format=jpg&f=image",
+      "latitude": 21.341693,
+      "longitude": -158.118791
     }
-  ]
+  ],
+  "imagery": "USGS National Map (public domain)"
 }

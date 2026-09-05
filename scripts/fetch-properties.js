@@ -2,23 +2,27 @@
 /**
  * fetch-properties.js
  * -----------------------------------------------------------------------
- * Pulls real listings from the RentCast API and a real street-facing photo
- * from Google's Street View Static API, then writes them into the static
- * JSON files the game reads (data/properties-*.json).
+ * Pulls real, currently-listed homes from the RentCast API and pairs each
+ * one with a real aerial photo of that exact address from the USGS National
+ * Map imagery service, then writes them into the static JSON files the game
+ * reads (data/properties-*.json).
+ *
+ * Why USGS for the photos: it's public domain US government imagery, free
+ * forever, and needs no API key and no billing account — so nothing secret
+ * ends up in the committed data files or in the browser. (Google Street View
+ * would need a credit card on file, and its key would be visible inside every
+ * committed image URL.)
  *
  * This script is meant to run in GitHub Actions (see
  * .github/workflows/refresh-data.yml), NOT in the browser — that's what
- * keeps your API keys private. It reads them from environment variables,
- * which the workflow populates from GitHub repo secrets.
+ * keeps your RentCast key private. It reads it from an environment
+ * variable, which the workflow populates from a GitHub repo secret.
  *
  * Required environment variables:
- *   RENTCAST_API_KEY   - from https://www.rentcast.io/api
- *   GOOGLE_MAPS_API_KEY - a Google Cloud API key with the "Street View
- *                         Static API" enabled (billing must be on, but
- *                         Google gives a monthly free credit)
+ *   RENTCAST_API_KEY - from https://www.rentcast.io/api
  *
- * Run locally to test (never commit your real keys):
- *   RENTCAST_API_KEY=xxx GOOGLE_MAPS_API_KEY=yyy node scripts/fetch-properties.js
+ * Run locally to test (never commit your real key):
+ *   RENTCAST_API_KEY=xxx node scripts/fetch-properties.js
  * -----------------------------------------------------------------------
  */
 
@@ -26,34 +30,65 @@ const fs = require("fs");
 const path = require("path");
 
 const RENTCAST_API_KEY = process.env.RENTCAST_API_KEY;
-const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 const DATA_DIR = path.join(__dirname, "..", "data");
 
-// One config entry per pack this script can refresh. Tune the RentCast
-// query params to change what shows up in each pack.
+const IMAGE_WIDTH = 900;
+const IMAGE_HEIGHT = 600;
+
+// How much ground the aerial photo covers, left to right. A house wants a
+// tight crop so it fills the frame, but zooming that far into a condo tower
+// just fills the shot with white rooftop — those need enough width to show
+// the building sitting in its neighborhood.
+const VIEW_METERS_HOUSE = 170;
+const VIEW_METERS_BUILDING = 450;
+const MULTI_UNIT_TYPES = ["Condo", "Apartment", "Multi-Family"];
+
+function viewWidthMeters(propertyType) {
+  return MULTI_UNIT_TYPES.includes(propertyType) ? VIEW_METERS_BUILDING : VIEW_METERS_HOUSE;
+}
+
+// One config entry per pack this script can refresh. `rentcastParams` is sent
+// straight to RentCast, so filtering happens server-side against their whole
+// database rather than against a small sample. Numeric ranges use "min:max"
+// and multiple values use "a|b" (see developers.rentcast.io).
 const PACKS = [
   {
     key: "standard",
     outFile: "properties-standard.json",
     label: "Starter Homes",
-    count: 15,
-    rentcastParams: { limit: "50", status: "Active" }, // add city/state filters as you like
+    count: 40,
+    rentcastParams: {
+      limit: "500",
+      status: "Active",
+      propertyType: "Single Family|Townhouse|Condo",
+      price: "150000:650000"
+    },
     priceRange: [150000, 650000]
   },
   {
     key: "mansion",
     outFile: "properties-mansion.json",
     label: "Mansion Expansion",
-    count: 10,
-    rentcastParams: { limit: "50", status: "Active" },
+    count: 40,
+    rentcastParams: {
+      limit: "500",
+      status: "Active",
+      propertyType: "Single Family",
+      price: "3000000:30000000"
+    },
     priceRange: [3000000, 30000000]
   },
   {
     key: "hawaii",
     outFile: "properties-hawaii.json",
     label: "Hawaii Expansion",
-    count: 10,
-    rentcastParams: { limit: "50", status: "Active", state: "HI" },
+    count: 40,
+    rentcastParams: {
+      limit: "500",
+      status: "Active",
+      state: "HI",
+      price: "400000:10000000"
+    },
     priceRange: [400000, 10000000]
   }
 ];
@@ -66,13 +101,33 @@ async function rentcastSearch(params) {
   return res.json();
 }
 
-function streetViewUrl(lat, lng) {
-  const url = new URL("https://maps.googleapis.com/maps/api/streetview");
-  url.searchParams.set("size", "900x600");
-  url.searchParams.set("location", `${lat},${lng}`);
-  url.searchParams.set("fov", "80");
-  url.searchParams.set("key", GOOGLE_MAPS_API_KEY);
+// A top-down photo of the actual lot, centred on the home. The game draws a
+// marker over the middle of this image so players know which house is theirs.
+function aerialImageUrl(lat, lng, propertyType) {
+  const viewMeters = viewWidthMeters(propertyType);
+  const heightMeters = viewMeters * (IMAGE_HEIGHT / IMAGE_WIDTH);
+  const dLat = heightMeters / 111320;
+  const dLng = viewMeters / (111320 * Math.cos((lat * Math.PI) / 180));
+  const bbox = [lng - dLng / 2, lat - dLat / 2, lng + dLng / 2, lat + dLat / 2]
+    .map(n => n.toFixed(6))
+    .join(",");
+
+  const url = new URL("https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage");
+  url.searchParams.set("bbox", bbox);
+  url.searchParams.set("bboxSR", "4326");
+  url.searchParams.set("size", `${IMAGE_WIDTH},${IMAGE_HEIGHT}`);
+  url.searchParams.set("format", "jpg");
+  url.searchParams.set("f", "image");
   return url.toString();
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 function toGameShape(listing, id) {
@@ -88,9 +143,9 @@ function toGameShape(listing, id) {
     yearBuilt: listing.yearBuilt ?? null,
     lotSizeAcres: listing.lotSize ? Number((listing.lotSize / 43560).toFixed(2)) : 0,
     price: listing.price,
-    image: listing.latitude && listing.longitude
-      ? streetViewUrl(listing.latitude, listing.longitude)
-      : `https://picsum.photos/seed/${id}/900/600`
+    latitude: listing.latitude,
+    longitude: listing.longitude,
+    image: aerialImageUrl(listing.latitude, listing.longitude, listing.propertyType)
   };
 }
 
@@ -98,35 +153,42 @@ async function buildPack(pack) {
   console.log(`Fetching pack "${pack.key}"...`);
   const results = await rentcastSearch(pack.rentcastParams);
   const [minPrice, maxPrice] = pack.priceRange;
-  const filtered = results
-    .filter(l => l.price && l.price >= minPrice && l.price <= maxPrice)
-    .slice(0, pack.count);
 
-  if (filtered.length === 0) {
+  // Belt-and-braces price check in case a server-side filter is ever ignored,
+  // plus coordinates are required — without them there's no aerial photo.
+  const usable = results.filter(l =>
+    l.price && l.price >= minPrice && l.price <= maxPrice &&
+    typeof l.latitude === "number" && typeof l.longitude === "number"
+  );
+
+  if (usable.length === 0) {
     console.warn(`  No listings matched pack "${pack.key}" — keeping existing file untouched.`);
     return;
   }
 
-  const properties = filtered.map((l, i) => toGameShape(l, `${pack.key}-${String(i + 1).padStart(3, "0")}`));
+  // Shuffle before slicing so each run surfaces a different set of homes
+  // instead of always the most recently seen ones.
+  const properties = shuffle(usable)
+    .slice(0, pack.count)
+    .map((l, i) => toGameShape(l, `${pack.key}-${String(i + 1).padStart(3, "0")}`));
+
   const outPath = path.join(DATA_DIR, pack.outFile);
   const payload = {
     pack: pack.key,
     label: pack.label,
     source: "rentcast",
+    imagery: "USGS National Map (public domain)",
     fetchedAt: new Date().toISOString(),
     properties
   };
   fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-  console.log(`  Wrote ${properties.length} listings to ${outPath}`);
+  console.log(`  Wrote ${properties.length} listings (of ${usable.length} matches) to ${outPath}`);
 }
 
 async function main() {
   if (!RENTCAST_API_KEY) {
     console.error("Missing RENTCAST_API_KEY environment variable. Nothing to do.");
     process.exit(1);
-  }
-  if (!GOOGLE_MAPS_API_KEY) {
-    console.warn("No GOOGLE_MAPS_API_KEY set — listings will fall back to placeholder photos.");
   }
   for (const pack of PACKS) {
     try {
