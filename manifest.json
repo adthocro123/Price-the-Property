@@ -4,8 +4,8 @@
   "description": "Guess the price of real homes, mansions, Hawaii getaways, and cars!",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#fff2e0",
-  "theme_color": "#ff6f91",
+  "background_color": "#FBF2DC",
+  "theme_color": "#143C33",
   "orientation": "portrait",
   "icons": [
     { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }

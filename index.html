@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
 <title>Price the Property 🏡💰</title>
 <meta name="description" content="Guess the price of real homes, mansions, Hawaii getaways, and cars — closest without going over wins!" />
-<meta name="theme-color" content="#ff6f91" />
+<meta name="theme-color" content="#F3BB2E" />
 <link rel="manifest" href="manifest.json" />
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="assets/icon.svg" />
@@ -13,7 +13,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -22,26 +22,41 @@
 
 <!-- HOME SCREEN -->
 <main id="screen-home" class="screen active">
-  <div class="home-hero">
-    <h1 class="logo">Price <span class="logo-the">the</span> Property</h1>
-    <p class="tagline">How well do YOU know home prices? 🏡✨</p>
+  <header class="home-header">
+    <div class="logo">
+      <span class="logo-stack">Price<br>the</span>
+      <span class="logo-badge">Property</span>
+    </div>
+    <span class="header-pill header-pill-gold"><span class="pill-icon">🪙</span><span id="stat-coins">0</span></span>
+  </header>
+
+  <section class="hero-card" id="hero-card">
+    <div class="hero-overlay"></div>
+    <div class="hero-badges">
+      <span class="hero-badge hero-badge-gold" id="hero-pack-badge">🏠 Starter Homes</span>
+      <span class="hero-badge hero-badge-dark">🔥 <span id="stat-streak">0</span> streak</span>
+    </div>
+    <div class="hero-text">
+      <h1>How well do YOU<br>know home prices?</h1>
+      <p>Closest without going over wins points, coins &amp; streaks.</p>
+    </div>
+    <button class="btn btn-gold btn-big btn-hero" id="btn-play">▶ Play Now</button>
+  </section>
+
+  <div class="secondary-actions">
+    <button class="btn btn-outline" id="btn-daily">📅 Daily Challenge</button>
+    <button class="btn btn-outline" id="btn-store">🛍️ Store</button>
   </div>
 
-  <div class="stat-pills">
-    <div class="pill"><span class="pill-icon">🪙</span><span id="stat-coins">0</span></div>
-    <div class="pill"><span class="pill-icon">🔥</span><span id="stat-streak">0</span> streak</div>
-    <div class="pill"><span class="pill-icon">🏆</span><span id="stat-best">0</span> best</div>
-  </div>
-
-  <div class="menu-buttons">
-    <button class="btn btn-primary btn-big" id="btn-play">▶ Play Now</button>
-    <button class="btn btn-secondary btn-big" id="btn-daily">📅 Daily Challenge</button>
-    <button class="btn btn-outline btn-big" id="btn-store">🛍️ Expansion Store</button>
+  <div class="stat-cards">
+    <div class="stat-card"><span class="stat-card-value" id="stat-best">0</span><span class="stat-card-label">Best score</span></div>
+    <div class="stat-card"><span class="stat-card-value" id="stat-games">0</span><span class="stat-card-label">Games</span></div>
+    <div class="stat-card"><span class="stat-card-value" id="stat-bullseyes">0</span><span class="stat-card-label">Bullseyes</span></div>
   </div>
 
   <div class="pack-select-wrap">
-    <p class="pack-select-label">Choose your pack:</p>
-    <div class="pack-grid" id="pack-grid"><!-- populated by JS --></div>
+    <p class="pack-select-label">Pick your obsession</p>
+    <div class="pack-scroll" id="pack-grid"><!-- populated by JS --></div>
   </div>
 
   <footer class="home-footer">
@@ -53,12 +68,14 @@
 <main id="screen-game" class="screen">
   <div class="game-topbar">
     <button class="icon-btn" id="btn-game-exit" aria-label="Back">✕</button>
-    <div class="round-indicator" id="round-indicator">Round 1 / 5</div>
-    <div class="topbar-stats">
-      <span class="pill pill-sm"><span class="pill-icon">🪙</span><span id="game-coins">0</span></span>
-      <span class="pill pill-sm"><span class="pill-icon">🔥</span><span id="game-streak">0</span></span>
+    <div class="round-title">
+      <div class="round-title-main" id="round-title-main">Starter Homes</div>
+      <div class="round-title-sub" id="round-indicator">Round 1 of 5</div>
     </div>
+    <span class="header-pill header-pill-gold"><span class="pill-icon">🪙</span><span id="game-coins">0</span></span>
   </div>
+
+  <div class="round-dots" id="round-dots"><!-- populated by JS --></div>
 
   <div class="property-card" id="property-card">
     <div class="property-image-wrap">
@@ -68,55 +85,64 @@
     <div class="property-details">
       <h2 id="property-title">Loading…</h2>
       <p class="property-address" id="property-address"></p>
-      <div class="detail-chips" id="detail-chips"><!-- populated by JS --></div>
+      <p class="detail-line" id="detail-line"></p>
+      <hr class="detail-divider" id="detail-divider" />
+      <p class="detail-line-secondary" id="detail-line-secondary"></p>
     </div>
   </div>
 
   <div class="guess-panel">
-    <label class="guess-label" for="guess-input">Your guess</label>
-    <div class="guess-input-row">
-      <span class="dollar-sign">$</span>
-      <input type="tel" inputmode="numeric" id="guess-input" placeholder="0" autocomplete="off" />
+    <div class="guess-label-row">
+      <span class="guess-label">What did it sell for?</span>
+      <span class="guess-hint">Drag to guess</span>
+    </div>
+    <div class="guess-display">
+      <span class="dollar-sign">$</span><input type="tel" inputmode="numeric" id="guess-input" placeholder="0" autocomplete="off" />
     </div>
     <input type="range" id="guess-slider" min="0" max="1000000" step="500" value="0" />
-    <button class="btn btn-primary btn-big" id="btn-submit-guess">Lock In Guess 🔒</button>
+    <div class="slider-range-labels"><span id="slider-min-label">$0</span><span id="slider-max-label">$1M</span></div>
+    <div class="quick-adjust" id="quick-adjust"><!-- populated by JS --></div>
+    <button class="btn btn-teal btn-big" id="btn-submit-guess">Lock In My Guess</button>
   </div>
-</main>
 
-<!-- RESULT SCREEN -->
-<main id="screen-result" class="screen">
-  <div class="result-card" id="result-card">
-    <div class="result-badge" id="result-badge">🎉</div>
-    <h2 id="result-heading">Nice guess!</h2>
-    <p id="result-subtext"></p>
-    <div class="result-price-compare">
-      <div class="rp-col">
-        <span class="rp-label">Your guess</span>
-        <span class="rp-value" id="result-your-guess">$0</span>
+  <div class="result-modal" id="result-modal">
+    <div class="result-modal-backdrop"></div>
+    <div class="result-card" id="result-card">
+      <div class="result-badge-wrap"><div class="result-badge" id="result-badge">🎯</div></div>
+      <h2 id="result-heading">Nice guess!</h2>
+      <p id="result-subtext"></p>
+      <div class="result-price-compare">
+        <div class="rp-col rp-guess">
+          <span class="rp-label">Your guess</span>
+          <span class="rp-value" id="result-your-guess">$0</span>
+        </div>
+        <div class="rp-col rp-actual">
+          <span class="rp-label">Actual price</span>
+          <span class="rp-value" id="result-actual-price">$0</span>
+        </div>
       </div>
-      <div class="rp-col">
-        <span class="rp-label">Actual price</span>
-        <span class="rp-value rp-actual" id="result-actual-price">$0</span>
-      </div>
+      <div class="result-points">+<span id="result-points">0</span> points • +<span id="result-coins">0</span> coins</div>
+      <button class="btn btn-gold btn-big" id="btn-next-round">Next Property →</button>
     </div>
-    <div class="result-points">+<span id="result-points">0</span> pts &nbsp;•&nbsp; +<span id="result-coins">0</span> 🪙</div>
-    <button class="btn btn-primary btn-big" id="btn-next-round">Next Property →</button>
   </div>
 </main>
 
 <!-- SHOWCASE SUMMARY SCREEN -->
-<main id="screen-summary" class="screen">
-  <div class="summary-card">
-    <div class="summary-emoji" id="summary-emoji">🏆</div>
+<main id="screen-summary" class="screen screen-summary">
+  <div class="confetti" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="summary-content">
+    <div class="summary-badge"><span class="summary-emoji" id="summary-emoji">🏆</span></div>
     <h2 id="summary-heading">Showcase Complete!</h2>
-    <div class="summary-score" id="summary-score">0 pts</div>
     <p id="summary-subtext" class="summary-subtext"></p>
+    <div class="summary-score" id="summary-score">0</div>
+    <div class="summary-score-label">Final score</div>
+    <div class="summary-stars" id="summary-stars"></div>
     <div class="summary-share-box" id="summary-share-box"></div>
     <div class="summary-actions">
-      <button class="btn btn-outline" id="btn-share">📤 Share Result</button>
-      <button class="btn btn-primary btn-big" id="btn-play-again">Play Again</button>
-      <button class="btn btn-secondary" id="btn-summary-store">🛍️ Unlock More Packs</button>
-      <button class="btn btn-text" id="btn-summary-home">Back to Home</button>
+      <button class="btn btn-teal btn-big" id="btn-share">📤 Share My Score</button>
+      <button class="btn btn-outline btn-big" id="btn-play-again">Play Again</button>
+      <button class="btn btn-text" id="btn-summary-store">🛍️ Unlock More Packs</button>
+      <button class="btn btn-outline btn-big" id="btn-summary-home">Back Home</button>
     </div>
   </div>
 </main>
@@ -125,8 +151,8 @@
 <main id="screen-store" class="screen">
   <div class="game-topbar">
     <button class="icon-btn" id="btn-store-exit" aria-label="Back">✕</button>
-    <div class="round-indicator">Expansion Store</div>
-    <div></div>
+    <div class="round-title"><div class="round-title-main">Expansion Store</div></div>
+    <span></span>
   </div>
 
   <div class="store-intro">
@@ -140,6 +166,13 @@
     Payments are securely handled by Stripe. Restoring a purchase happens automatically after checkout.
   </div>
 </main>
+
+<nav class="tab-bar" id="tab-bar">
+  <button class="tab-btn active" id="tab-home"><span class="tab-icon">🏠</span><span>Home</span></button>
+  <button class="tab-btn" id="tab-play"><span class="tab-icon">🎯</span><span>Play</span></button>
+  <button class="tab-btn" id="tab-packs"><span class="tab-icon">🎁</span><span>Packs</span></button>
+  <button class="tab-btn" id="tab-me"><span class="tab-icon">🙂</span><span>Me</span></button>
+</nav>
 
 <script src="app.js"></script>
 </body>

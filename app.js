@@ -24,7 +24,7 @@ const CONFIG = {
     standard: {
       key: "standard", name: "Starter Homes", emoji: "🏠",
       file: "data/properties-standard.json", itemsKey: "properties", type: "property",
-      free: true, maxGuess: 1200000
+      free: true, maxGuess: 1200000, desc: "Everyday homes from coast to coast"
     },
     mansion: {
       key: "mansion", name: "Mansion Expansion", emoji: "🏰",
@@ -61,6 +61,8 @@ let state = {
   coins: 0,
   streak: 0,
   bestScore: 0,
+  gamesPlayed: 0,
+  bullseyes: 0,
   unlocked: { mansion: false, hawaii: false, car: false, pro: false },
   selectedPack: "standard",
   roundIndex: 0,
@@ -80,6 +82,8 @@ function loadSave() {
       state.coins = parsed.coins || 0;
       state.streak = parsed.streak || 0;
       state.bestScore = parsed.bestScore || 0;
+      state.gamesPlayed = parsed.gamesPlayed || 0;
+      state.bullseyes = parsed.bullseyes || 0;
       state.unlocked = Object.assign({ mansion: false, hawaii: false, car: false, pro: false }, parsed.unlocked || {});
     }
   } catch (e) { /* ignore corrupt save */ }
@@ -87,7 +91,8 @@ function loadSave() {
 function persistSave() {
   try {
     localStorage.setItem(SAVE_KEY, JSON.stringify({
-      coins: state.coins, streak: state.streak, bestScore: state.bestScore, unlocked: state.unlocked
+      coins: state.coins, streak: state.streak, bestScore: state.bestScore,
+      gamesPlayed: state.gamesPlayed, bullseyes: state.bullseyes, unlocked: state.unlocked
     }));
   } catch (e) { /* storage unavailable — game still works in-memory */ }
 }
@@ -135,6 +140,14 @@ function showToast(msg) {
 function showScreen(id) {
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
   document.getElementById(id).classList.add("active");
+
+  const tabBar = document.getElementById("tab-bar");
+  const showTabs = id === "screen-home" || id === "screen-store";
+  tabBar.classList.toggle("visible", showTabs);
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  if (id === "screen-home") document.getElementById("tab-home").classList.add("active");
+  if (id === "screen-store") document.getElementById("tab-packs").classList.add("active");
+
   window.scrollTo(0, 0);
 }
 
@@ -149,30 +162,55 @@ async function fetchPackData(key) {
   return items;
 }
 
+/* ------------------------------ formatting ------------------------------*/
+function formatCompactUSD(n) {
+  const abs = Math.abs(n);
+  if (abs >= 1000000) return "$" + (abs / 1000000).toFixed(abs % 1000000 === 0 ? 0 : 1) + "M";
+  if (abs >= 1000) return "$" + Math.round(abs / 1000) + "K";
+  return "$" + abs;
+}
+function quickAdjustAmounts(maxGuess) {
+  if (maxGuess <= 150000) return [-5000, -1000, 1000, 5000];
+  if (maxGuess <= 1500000) return [-50000, -10000, 10000, 50000];
+  if (maxGuess <= 10000000) return [-250000, -50000, 50000, 250000];
+  return [-1000000, -250000, 250000, 1000000];
+}
+
 /* ---------------------------- home screen ------------------------------*/
 function renderHome() {
-  document.getElementById("stat-coins").textContent = state.coins;
+  document.getElementById("stat-coins").textContent = state.coins.toLocaleString();
   document.getElementById("stat-streak").textContent = state.streak;
-  document.getElementById("stat-best").textContent = state.bestScore;
+  document.getElementById("stat-best").textContent = state.bestScore.toLocaleString();
+  document.getElementById("stat-games").textContent = state.gamesPlayed;
+  document.getElementById("stat-bullseyes").textContent = state.bullseyes;
+
+  const selectedPack = CONFIG.packs[state.selectedPack];
+  document.getElementById("hero-pack-badge").textContent = `${selectedPack.emoji} ${selectedPack.name}`;
 
   const grid = document.getElementById("pack-grid");
   grid.innerHTML = "";
   Object.values(CONFIG.packs).forEach(pack => {
     const unlocked = isPackUnlocked(pack.key);
-    const tile = document.createElement("div");
-    tile.className = "pack-tile" + (state.selectedPack === pack.key ? " selected" : "") + (!unlocked ? " locked" : "");
-    tile.innerHTML = `
-      ${!unlocked ? `<span class="pack-lock-chip">🔒 ${pack.price || ""}</span>` : ""}
-      <div class="pack-tile-emoji">${pack.emoji}</div>
-      <div class="pack-tile-name">${pack.name}</div>
-      <div class="pack-tile-sub">${unlocked ? "Tap to select" : "Unlock in store"}</div>
+    const selected = state.selectedPack === pack.key;
+    const card = document.createElement("div");
+    card.className = "pack-photo-card" + (selected ? " selected" : "");
+    card.style.backgroundImage = `url('https://picsum.photos/seed/ptp-pack-${pack.key}/600/480')`;
+    card.innerHTML = `
+      <div class="pack-photo-overlay"></div>
+      <div class="pack-photo-top">
+        ${!unlocked ? `<span class="pack-badge-lock">🔒 Expansion</span><span class="pack-badge-price">${pack.price || ""}</span>` : (selected ? `<span class="pack-badge-selected">✓ Selected</span>` : `<span></span>`)}
+      </div>
+      <div class="pack-photo-bottom">
+        <div class="pack-photo-name">${pack.emoji} ${pack.name}</div>
+        <div class="pack-photo-desc">${pack.desc || ""}</div>
+      </div>
     `;
-    tile.addEventListener("click", () => {
-      if (!unlocked) { showScreen("screen-store"); renderStore(); return; }
+    card.addEventListener("click", () => {
+      if (!unlocked) { renderStore(); showScreen("screen-store"); return; }
       state.selectedPack = pack.key;
       renderHome();
     });
-    grid.appendChild(tile);
+    grid.appendChild(card);
   });
 }
 
@@ -255,6 +293,7 @@ async function startGame(isDaily) {
   state.roundIndex = 0;
   state.showcaseScore = 0;
   state.showcaseGrid = [];
+  closeResultModal();
 
   let pool = [];
   if (isDaily) {
@@ -282,15 +321,50 @@ async function startGame(isDaily) {
 
 function currentRound() { return state.roundItems[state.roundIndex]; }
 
+function updateSliderFill(slider) {
+  const pct = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+  slider.style.background = `linear-gradient(to right, var(--green) 0%, var(--green) ${pct}%, var(--card-alt) ${pct}%, var(--card-alt) 100%)`;
+}
+
+function setGuessValue(v, slider) {
+  const clamped = Math.max(0, Math.min(v, parseInt(slider.max, 10)));
+  slider.value = clamped;
+  document.getElementById("guess-input").value = clamped;
+  updateSliderFill(slider);
+}
+
+function renderQuickAdjust(maxGuess) {
+  const wrap = document.getElementById("quick-adjust");
+  wrap.innerHTML = "";
+  quickAdjustAmounts(maxGuess).forEach(delta => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "quick-adjust-btn";
+    btn.textContent = (delta < 0 ? "−" : "+") + formatCompactUSD(delta);
+    btn.addEventListener("click", () => {
+      const slider = document.getElementById("guess-slider");
+      setGuessValue(currentGuessValue() + delta, slider);
+    });
+    wrap.appendChild(btn);
+  });
+}
+
 function loadRound() {
   const round = currentRound();
   const pack = CONFIG.packs[round.packKey];
   const item = round.item;
 
-  document.getElementById("round-indicator").textContent =
-    (state.isDaily ? "Daily • " : "") + `Round ${state.roundIndex + 1} / ${state.roundItems.length}`;
-  document.getElementById("game-coins").textContent = state.coins;
-  document.getElementById("game-streak").textContent = state.streak;
+  document.getElementById("round-title-main").textContent = state.isDaily ? "Daily Challenge" : pack.name;
+  document.getElementById("round-indicator").textContent = `Round ${state.roundIndex + 1} of ${state.roundItems.length}`;
+  document.getElementById("game-coins").textContent = state.coins.toLocaleString();
+
+  const dotsWrap = document.getElementById("round-dots");
+  dotsWrap.innerHTML = "";
+  state.roundItems.forEach((_, i) => {
+    const dot = document.createElement("span");
+    dot.className = "round-dot" + (i < state.roundIndex ? " done" : "") + (i === state.roundIndex ? " current" : "");
+    dotsWrap.appendChild(dot);
+  });
 
   const imgEl = document.getElementById("property-image");
   imgEl.alt = item.title;
@@ -301,36 +375,41 @@ function loadRound() {
   document.getElementById("property-pack-badge").textContent = pack.emoji + " " + pack.name;
   document.getElementById("property-title").textContent = item.title;
 
-  const chipsWrap = document.getElementById("detail-chips");
-  chipsWrap.innerHTML = "";
-  let chips, subtitle;
+  let primaryChips, secondaryChips, subtitle;
   if (pack.type === "vehicle") {
     subtitle = `${item.year} • ${item.condition}`;
-    chips = [item.make, item.model, `${item.mileage.toLocaleString()} mi`];
+    primaryChips = [item.make, item.model, `${item.mileage.toLocaleString()} mi`];
+    secondaryChips = [];
   } else {
     subtitle = `${item.city}, ${item.state}`;
-    chips = [`${item.beds} bd`, `${item.baths} ba`, `${item.sqft.toLocaleString()} sqft`, `Built ${item.yearBuilt}`, `${item.lotSizeAcres} ac lot`];
+    primaryChips = [`${item.beds} bd`, `${item.baths} ba`, `${item.sqft.toLocaleString()} sqft`];
+    secondaryChips = [`Built ${item.yearBuilt}`, `${item.lotSizeAcres} ac lot`];
   }
   document.getElementById("property-address").textContent = subtitle;
-  chips.forEach(c => {
-    const span = document.createElement("span");
-    span.className = "detail-chip";
-    span.textContent = c;
-    chipsWrap.appendChild(span);
-  });
+  document.getElementById("detail-line").textContent = primaryChips.join(" • ");
+  const secondaryLine = document.getElementById("detail-line-secondary");
+  const divider = document.getElementById("detail-divider");
+  secondaryLine.textContent = secondaryChips.join(" • ");
+  divider.style.display = secondaryChips.length ? "" : "none";
 
   const slider = document.getElementById("guess-slider");
+  slider.min = 0;
   slider.max = pack.maxGuess;
   slider.step = pack.maxGuess > 2000000 ? 10000 : (pack.maxGuess > 200000 ? 1000 : 250);
-  slider.value = Math.round(pack.maxGuess / 2);
-  document.getElementById("guess-input").value = "";
+  setGuessValue(Math.round(pack.maxGuess / 2), slider);
+  document.getElementById("slider-min-label").textContent = formatCompactUSD(0);
+  document.getElementById("slider-max-label").textContent = formatCompactUSD(pack.maxGuess);
+  renderQuickAdjust(pack.maxGuess);
 }
 
 function currentGuessValue() {
   const raw = document.getElementById("guess-input").value;
-  const n = parseInt(raw.replace(/[^0-9]/g, ""), 10);
+  const n = parseInt(String(raw).replace(/[^0-9]/g, ""), 10);
   return isNaN(n) ? parseInt(document.getElementById("guess-slider").value, 10) : n;
 }
+
+function openResultModal() { document.getElementById("result-modal").classList.add("open"); }
+function closeResultModal() { document.getElementById("result-modal").classList.remove("open"); }
 
 function submitGuess() {
   const round = currentRound();
@@ -352,6 +431,7 @@ function submitGuess() {
   const coinsEarned = Math.round(pts / 20) + (state.streak > 0 && state.streak % 3 === 0 ? 15 : 0);
   state.coins += coinsEarned;
   state.showcaseScore += pts;
+  if (!over && pts >= 900) state.bullseyes += 1;
 
   let gridEmoji = "🟥";
   if (!over) {
@@ -362,23 +442,28 @@ function submitGuess() {
   state.showcaseGrid.push(gridEmoji);
   persistSave();
 
+  const tier = over ? "over" : (pts >= 900 ? "great" : pts >= 500 ? "good" : "ok");
+  document.getElementById("result-card").className = "result-card result-" + tier;
   document.getElementById("result-badge").textContent = over ? "😬" : (pts >= 900 ? "🎯" : pts >= 500 ? "🎉" : "👍");
   document.getElementById("result-heading").textContent = over
     ? "Over budget!"
-    : (pts >= 900 ? "Incredible guess!" : pts >= 500 ? "Nice guess!" : "Not bad!");
+    : (pts >= 900 ? "Bullseye!" : pts >= 500 ? "Nice guess!" : "Not bad!");
   document.getElementById("result-subtext").textContent = over
     ? "You went over — that's $0 for this one."
     : `You were within ${Math.round(Math.abs(actual - guess) / actual * 100)}% of the actual price.`;
   document.getElementById("result-your-guess").textContent = "$" + guess.toLocaleString();
   document.getElementById("result-actual-price").textContent = "$" + actual.toLocaleString();
-  document.getElementById("result-points").textContent = pts;
+  document.getElementById("result-points").textContent = pts.toLocaleString();
   document.getElementById("result-coins").textContent = coinsEarned;
+  document.getElementById("btn-next-round").textContent =
+    (state.roundIndex + 1 >= state.roundItems.length ? "See My Results →" : "Next Property →");
 
   if (navigator.vibrate) navigator.vibrate(over ? 80 : [40, 30, 40]);
-  showScreen("screen-result");
+  openResultModal();
 }
 
 function nextRound() {
+  closeResultModal();
   state.roundIndex += 1;
   if (state.roundIndex >= state.roundItems.length) {
     showSummary();
@@ -388,17 +473,35 @@ function nextRound() {
   }
 }
 
+function starsForScore(score, rounds) {
+  const maxPossible = rounds * 1200;
+  const pct = maxPossible > 0 ? score / maxPossible : 0;
+  return Math.max(1, Math.min(5, Math.round(pct * 5)));
+}
+
 function showSummary() {
   const isNewBest = state.showcaseScore > state.bestScore;
   if (isNewBest) state.bestScore = state.showcaseScore;
+  state.gamesPlayed += 1;
   persistSave();
 
-  document.getElementById("summary-emoji").textContent = isNewBest ? "🏆" : "🏡";
-  document.getElementById("summary-heading").textContent = state.isDaily ? "Daily Challenge Complete!" : "Showcase Complete!";
-  document.getElementById("summary-score").textContent = state.showcaseScore + " pts";
+  const stars = starsForScore(state.showcaseScore, state.roundItems.length);
+  const tiers = [
+    { min: 5, emoji: "🏆", heading: "Open-house oracle!", sub: "Today's homes didn't stand a chance." },
+    { min: 4, emoji: "🌟", heading: "Sharp eye for value!", sub: "You're closer than most agents." },
+    { min: 3, emoji: "🏡", heading: "Solid showing!", sub: "You know your way around a listing." },
+    { min: 2, emoji: "🤔", heading: "Room to grow!", sub: "The market's tricky — try again." },
+    { min: 1, emoji: "😅", heading: "Tough round!", sub: "Every showcase is a learning curve." }
+  ];
+  const tier = tiers.find(t => stars >= t.min) || tiers[tiers.length - 1];
+
+  document.getElementById("summary-emoji").textContent = tier.emoji;
+  document.getElementById("summary-heading").textContent = state.isDaily ? "Daily Challenge Complete!" : tier.heading;
+  document.getElementById("summary-score").textContent = state.showcaseScore.toLocaleString();
+  document.getElementById("summary-stars").textContent = "★".repeat(stars) + "☆".repeat(5 - stars);
   document.getElementById("summary-subtext").textContent = isNewBest
     ? "🎉 New personal best!"
-    : `Personal best: ${state.bestScore} pts`;
+    : (state.isDaily ? tier.sub : `Personal best: ${state.bestScore.toLocaleString()} pts`);
 
   const dateLabel = new Date().toLocaleDateString(undefined, { month: "short", day: "numeric" });
   const shareText = `Price the Property ${state.isDaily ? "Daily " : ""}${dateLabel}\n${state.showcaseGrid.join(" ")}\n${state.showcaseScore} pts — can you beat me? ${CONFIG.siteUrl}`;
@@ -429,8 +532,14 @@ function wireEvents() {
   document.getElementById("btn-summary-store").addEventListener("click", () => { renderStore(); showScreen("screen-store"); });
   document.getElementById("btn-summary-home").addEventListener("click", () => { renderHome(); showScreen("screen-home"); });
 
+  document.getElementById("tab-home").addEventListener("click", () => { renderHome(); showScreen("screen-home"); });
+  document.getElementById("tab-play").addEventListener("click", () => startGame(false));
+  document.getElementById("tab-packs").addEventListener("click", () => { renderStore(); showScreen("screen-store"); });
+  document.getElementById("tab-me").addEventListener("click", () => showToast("🙂 Profile & achievements coming soon — check your stats above!"));
+
   document.getElementById("btn-game-exit").addEventListener("click", () => {
     if (confirm("Leave this showcase? Your progress on this round will be lost.")) {
+      closeResultModal();
       renderHome();
       showScreen("screen-home");
     }
@@ -438,10 +547,15 @@ function wireEvents() {
 
   document.getElementById("guess-slider").addEventListener("input", (e) => {
     document.getElementById("guess-input").value = e.target.value;
+    updateSliderFill(e.target);
   });
   document.getElementById("guess-input").addEventListener("input", (e) => {
     const n = parseInt(e.target.value.replace(/[^0-9]/g, ""), 10);
-    if (!isNaN(n)) document.getElementById("guess-slider").value = Math.min(n, parseInt(document.getElementById("guess-slider").max, 10));
+    const slider = document.getElementById("guess-slider");
+    if (!isNaN(n)) {
+      slider.value = Math.min(n, parseInt(slider.max, 10));
+      updateSliderFill(slider);
+    }
   });
 
   document.getElementById("btn-submit-guess").addEventListener("click", submitGuess);
