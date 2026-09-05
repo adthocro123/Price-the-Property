@@ -1,0 +1,20 @@
+{
+  "pack": "standard",
+  "label": "Starter Homes",
+  "source": "demo",
+  "note": "Demo listings for local preview. Run scripts/fetch-properties.js with a RentCast API key to replace these with live listings.",
+  "properties": [
+    { "id": "std-001", "title": "Cozy Craftsman Bungalow", "address": "412 Birchwood Ln", "city": "Traverse City", "state": "MI", "beds": 3, "baths": 2, "sqft": 1450, "yearBuilt": 1998, "lotSizeAcres": 0.25, "price": 289900, "image": "https://picsum.photos/seed/ptp-std-001/900/600" },
+    { "id": "std-002", "title": "Updated Ranch Near the Lake", "address": "2201 Harborview Dr", "city": "Petoskey", "state": "MI", "beds": 3, "baths": 2, "sqft": 1680, "yearBuilt": 2004, "lotSizeAcres": 0.3, "price": 349000, "image": "https://picsum.photos/seed/ptp-std-002/900/600" },
+    { "id": "std-003", "title": "Downtown Brick Colonial", "address": "77 Sycamore St", "city": "Ann Arbor", "state": "MI", "beds": 4, "baths": 2.5, "sqft": 2200, "yearBuilt": 1926, "lotSizeAcres": 0.18, "price": 469900, "image": "https://picsum.photos/seed/ptp-std-003/900/600" },
+    { "id": "std-004", "title": "Split-Level Family Home", "address": "935 Maplewood Ct", "city": "Grand Rapids", "state": "MI", "beds": 4, "baths": 3, "sqft": 2450, "yearBuilt": 1989, "lotSizeAcres": 0.35, "price": 385000, "image": "https://picsum.photos/seed/ptp-std-004/900/600" },
+    { "id": "std-005", "title": "Charming Starter Cottage", "address": "18 Pinecrest Ave", "city": "Boyne City", "state": "MI", "beds": 2, "baths": 1, "sqft": 980, "yearBuilt": 1955, "lotSizeAcres": 0.15, "price": 219500, "image": "https://picsum.photos/seed/ptp-std-005/900/600" },
+    { "id": "std-006", "title": "Modern Farmhouse Build", "address": "6600 County Rd 42", "city": "Charlevoix", "state": "MI", "beds": 4, "baths": 3, "sqft": 2680, "yearBuilt": 2021, "lotSizeAcres": 1.1, "price": 599000, "image": "https://picsum.photos/seed/ptp-std-006/900/600" },
+    { "id": "std-007", "title": "Suburban Two-Story", "address": "312 Aspen Way", "city": "Columbus", "state": "OH", "beds": 4, "baths": 2.5, "sqft": 2350, "yearBuilt": 2007, "lotSizeAcres": 0.22, "price": 412000, "image": "https://picsum.photos/seed/ptp-std-007/900/600" },
+    { "id": "std-008", "title": "Riverside Fixer-Upper", "address": "44 Millrace Rd", "city": "Elk Rapids", "state": "MI", "beds": 3, "baths": 1.5, "sqft": 1320, "yearBuilt": 1972, "lotSizeAcres": 0.4, "price": 259000, "image": "https://picsum.photos/seed/ptp-std-008/900/600" },
+    { "id": "std-009", "title": "Contemporary Townhome", "address": "8 Lakeshore Commons", "city": "Traverse City", "state": "MI", "beds": 3, "baths": 2.5, "sqft": 1780, "yearBuilt": 2016, "lotSizeAcres": 0.08, "price": 439000, "image": "https://picsum.photos/seed/ptp-std-009/900/600" },
+    { "id": "std-010", "title": "Classic Cape Cod", "address": "150 Elm St", "city": "Portland", "state": "ME", "beds": 3, "baths": 2, "sqft": 1590, "yearBuilt": 1948, "lotSizeAcres": 0.2, "price": 459000, "image": "https://picsum.photos/seed/ptp-std-010/900/600" },
+    { "id": "std-011", "title": "Southwest Adobe Style", "address": "920 Desert Bloom Rd", "city": "Scottsdale", "state": "AZ", "beds": 3, "baths": 2, "sqft": 2010, "yearBuilt": 2001, "lotSizeAcres": 0.28, "price": 529000, "image": "https://picsum.photos/seed/ptp-std-011/900/600" },
+    { "id": "std-012", "title": "Cozy Bungalow Near Downtown", "address": "63 Chestnut Ave", "city": "Petoskey", "state": "MI", "beds": 2, "baths": 1, "sqft": 1120, "yearBuilt": 1935, "lotSizeAcres": 0.12, "price": 249900, "image": "https://picsum.photos/seed/ptp-std-012/900/600" }
+  ]
+}

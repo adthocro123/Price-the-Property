@@ -1,0 +1,18 @@
+{
+  "pack": "car",
+  "label": "Car Expansion",
+  "source": "manual",
+  "note": "Hand-curated demo listings. There is no equivalent of RentCast for used-vehicle pricing, so this file is meant to be edited by hand (or swapped for a data source you find later) rather than auto-fetched. Keep the same field shape when you add more.",
+  "vehicles": [
+    { "id": "car-001", "title": "2021 Honda Civic LX", "make": "Honda", "model": "Civic LX", "year": 2021, "mileage": 32000, "condition": "Used - Good", "price": 19500, "image": "https://picsum.photos/seed/ptp-car-001/900/600" },
+    { "id": "car-002", "title": "2023 Toyota RAV4 Hybrid XLE", "make": "Toyota", "model": "RAV4 Hybrid XLE", "year": 2023, "mileage": 14000, "condition": "Used - Excellent", "price": 33200, "image": "https://picsum.photos/seed/ptp-car-002/900/600" },
+    { "id": "car-003", "title": "2019 Ford F-150 XLT SuperCrew", "make": "Ford", "model": "F-150 XLT", "year": 2019, "mileage": 61000, "condition": "Used - Good", "price": 28900, "image": "https://picsum.photos/seed/ptp-car-003/900/600" },
+    { "id": "car-004", "title": "2024 Tesla Model 3", "make": "Tesla", "model": "Model 3", "year": 2024, "mileage": 6500, "condition": "Used - Like New", "price": 37500, "image": "https://picsum.photos/seed/ptp-car-004/900/600" },
+    { "id": "car-005", "title": "2016 Jeep Wrangler Sport", "make": "Jeep", "model": "Wrangler Sport", "year": 2016, "mileage": 88000, "condition": "Used - Fair", "price": 18700, "image": "https://picsum.photos/seed/ptp-car-005/900/600" },
+    { "id": "car-006", "title": "2022 Subaru Outback Premium", "make": "Subaru", "model": "Outback Premium", "year": 2022, "mileage": 21000, "condition": "Used - Excellent", "price": 27800, "image": "https://picsum.photos/seed/ptp-car-006/900/600" },
+    { "id": "car-007", "title": "2020 Chevrolet Corvette Stingray", "make": "Chevrolet", "model": "Corvette Stingray", "year": 2020, "mileage": 18500, "condition": "Used - Excellent", "price": 64900, "image": "https://picsum.photos/seed/ptp-car-007/900/600" },
+    { "id": "car-008", "title": "2018 Mazda CX-5 Touring", "make": "Mazda", "model": "CX-5 Touring", "year": 2018, "mileage": 74000, "condition": "Used - Good", "price": 17400, "image": "https://picsum.photos/seed/ptp-car-008/900/600" },
+    { "id": "car-009", "title": "2025 BMW X5 xDrive40i", "make": "BMW", "model": "X5 xDrive40i", "year": 2025, "mileage": 3200, "condition": "Used - Like New", "price": 68900, "image": "https://picsum.photos/seed/ptp-car-009/900/600" },
+    { "id": "car-010", "title": "2014 Volkswagen Jetta SE", "make": "Volkswagen", "model": "Jetta SE", "year": 2014, "mileage": 102000, "condition": "Used - Fair", "price": 8900, "image": "https://picsum.photos/seed/ptp-car-010/900/600" }
+  ]
+}

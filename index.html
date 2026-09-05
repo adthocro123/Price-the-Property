@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>Price the Property 🏡💰</title>
+<meta name="description" content="Guess the price of real homes, mansions, Hawaii getaways, and cars — closest without going over wins!" />
+<meta name="theme-color" content="#ff6f91" />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/icon.svg" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="toast-stack" class="toast-stack" aria-live="polite"></div>
+
+<!-- HOME SCREEN -->
+<main id="screen-home" class="screen active">
+  <div class="home-hero">
+    <h1 class="logo">Price <span class="logo-the">the</span> Property</h1>
+    <p class="tagline">How well do YOU know home prices? 🏡✨</p>
+  </div>
+
+  <div class="stat-pills">
+    <div class="pill"><span class="pill-icon">🪙</span><span id="stat-coins">0</span></div>
+    <div class="pill"><span class="pill-icon">🔥</span><span id="stat-streak">0</span> streak</div>
+    <div class="pill"><span class="pill-icon">🏆</span><span id="stat-best">0</span> best</div>
+  </div>
+
+  <div class="menu-buttons">
+    <button class="btn btn-primary btn-big" id="btn-play">▶ Play Now</button>
+    <button class="btn btn-secondary btn-big" id="btn-daily">📅 Daily Challenge</button>
+    <button class="btn btn-outline btn-big" id="btn-store">🛍️ Expansion Store</button>
+  </div>
+
+  <div class="pack-select-wrap">
+    <p class="pack-select-label">Choose your pack:</p>
+    <div class="pack-grid" id="pack-grid"><!-- populated by JS --></div>
+  </div>
+
+  <footer class="home-footer">
+    <span>Made for property-price fanatics 💅</span>
+  </footer>
+</main>
+
+<!-- GAME SCREEN -->
+<main id="screen-game" class="screen">
+  <div class="game-topbar">
+    <button class="icon-btn" id="btn-game-exit" aria-label="Back">✕</button>
+    <div class="round-indicator" id="round-indicator">Round 1 / 5</div>
+    <div class="topbar-stats">
+      <span class="pill pill-sm"><span class="pill-icon">🪙</span><span id="game-coins">0</span></span>
+      <span class="pill pill-sm"><span class="pill-icon">🔥</span><span id="game-streak">0</span></span>
+    </div>
+  </div>
+
+  <div class="property-card" id="property-card">
+    <div class="property-image-wrap">
+      <img id="property-image" src="" alt="Property photo" />
+      <span class="pack-badge" id="property-pack-badge">Starter</span>
+    </div>
+    <div class="property-details">
+      <h2 id="property-title">Loading…</h2>
+      <p class="property-address" id="property-address"></p>
+      <div class="detail-chips" id="detail-chips"><!-- populated by JS --></div>
+    </div>
+  </div>
+
+  <div class="guess-panel">
+    <label class="guess-label" for="guess-input">Your guess</label>
+    <div class="guess-input-row">
+      <span class="dollar-sign">$</span>
+      <input type="tel" inputmode="numeric" id="guess-input" placeholder="0" autocomplete="off" />
+    </div>
+    <input type="range" id="guess-slider" min="0" max="1000000" step="500" value="0" />
+    <button class="btn btn-primary btn-big" id="btn-submit-guess">Lock In Guess 🔒</button>
+  </div>
+</main>
+
+<!-- RESULT SCREEN -->
+<main id="screen-result" class="screen">
+  <div class="result-card" id="result-card">
+    <div class="result-badge" id="result-badge">🎉</div>
+    <h2 id="result-heading">Nice guess!</h2>
+    <p id="result-subtext"></p>
+    <div class="result-price-compare">
+      <div class="rp-col">
+        <span class="rp-label">Your guess</span>
+        <span class="rp-value" id="result-your-guess">$0</span>
+      </div>
+      <div class="rp-col">
+        <span class="rp-label">Actual price</span>
+        <span class="rp-value rp-actual" id="result-actual-price">$0</span>
+      </div>
+    </div>
+    <div class="result-points">+<span id="result-points">0</span> pts &nbsp;•&nbsp; +<span id="result-coins">0</span> 🪙</div>
+    <button class="btn btn-primary btn-big" id="btn-next-round">Next Property →</button>
+  </div>
+</main>
+
+<!-- SHOWCASE SUMMARY SCREEN -->
+<main id="screen-summary" class="screen">
+  <div class="summary-card">
+    <div class="summary-emoji" id="summary-emoji">🏆</div>
+    <h2 id="summary-heading">Showcase Complete!</h2>
+    <div class="summary-score" id="summary-score">0 pts</div>
+    <p id="summary-subtext" class="summary-subtext"></p>
+    <div class="summary-share-box" id="summary-share-box"></div>
+    <div class="summary-actions">
+      <button class="btn btn-outline" id="btn-share">📤 Share Result</button>
+      <button class="btn btn-primary btn-big" id="btn-play-again">Play Again</button>
+      <button class="btn btn-secondary" id="btn-summary-store">🛍️ Unlock More Packs</button>
+      <button class="btn btn-text" id="btn-summary-home">Back to Home</button>
+    </div>
+  </div>
+</main>
+
+<!-- STORE SCREEN -->
+<main id="screen-store" class="screen">
+  <div class="game-topbar">
+    <button class="icon-btn" id="btn-store-exit" aria-label="Back">✕</button>
+    <div class="round-indicator">Expansion Store</div>
+    <div></div>
+  </div>
+
+  <div class="store-intro">
+    <h2>Unlock more ways to play 🎁</h2>
+    <p>New photos, new price ranges, new bragging rights.</p>
+  </div>
+
+  <div class="store-list" id="store-list"><!-- populated by JS --></div>
+
+  <div class="store-footer-note">
+    Payments are securely handled by Stripe. Restoring a purchase happens automatically after checkout.
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

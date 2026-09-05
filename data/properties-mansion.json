@@ -1,0 +1,16 @@
+{
+  "pack": "mansion",
+  "label": "Mansion Expansion",
+  "source": "demo",
+  "note": "Demo listings for local preview. Run scripts/fetch-properties.js with a RentCast API key (filtered to high-value listings) to replace these with live mansions.",
+  "properties": [
+    { "id": "man-001", "title": "Gated Hilltop Estate", "address": "1 Ridgeline Ct", "city": "Bloomfield Hills", "state": "MI", "beds": 6, "baths": 7.5, "sqft": 9800, "yearBuilt": 2012, "lotSizeAcres": 3.2, "price": 4295000, "image": "https://picsum.photos/seed/ptp-man-001/900/600" },
+    { "id": "man-002", "title": "Lakefront Georgian Manor", "address": "88 Shoreline Dr", "city": "Harbor Springs", "state": "MI", "beds": 7, "baths": 8, "sqft": 11200, "yearBuilt": 2005, "lotSizeAcres": 4.5, "price": 6850000, "image": "https://picsum.photos/seed/ptp-man-002/900/600" },
+    { "id": "man-003", "title": "Modern Glass Hillside Villa", "address": "410 Canyon Crest Dr", "city": "Beverly Hills", "state": "CA", "beds": 6, "baths": 9, "sqft": 12500, "yearBuilt": 2019, "lotSizeAcres": 1.8, "price": 18900000, "image": "https://picsum.photos/seed/ptp-man-003/900/600" },
+    { "id": "man-004", "title": "Historic Southern Plantation Manor", "address": "2 Magnolia Row", "city": "Charleston", "state": "SC", "beds": 8, "baths": 7, "sqft": 10400, "yearBuilt": 1890, "lotSizeAcres": 12.0, "price": 5450000, "image": "https://picsum.photos/seed/ptp-man-004/900/600" },
+    { "id": "man-005", "title": "Ski Chalet Compound", "address": "77 Summit Trail", "city": "Aspen", "state": "CO", "beds": 5, "baths": 6, "sqft": 8700, "yearBuilt": 2014, "lotSizeAcres": 2.1, "price": 12750000, "image": "https://picsum.photos/seed/ptp-man-005/900/600" },
+    { "id": "man-006", "title": "Waterfront Contemporary Estate", "address": "35 Bayview Point", "city": "Naples", "state": "FL", "beds": 6, "baths": 7, "sqft": 9200, "yearBuilt": 2017, "lotSizeAcres": 1.4, "price": 8990000, "image": "https://picsum.photos/seed/ptp-man-006/900/600" },
+    { "id": "man-007", "title": "Stone Manor on the Bluff", "address": "9 Overlook Ridge", "city": "Ann Arbor", "state": "MI", "beds": 5, "baths": 6, "sqft": 7600, "yearBuilt": 2008, "lotSizeAcres": 2.6, "price": 3195000, "image": "https://picsum.photos/seed/ptp-man-007/900/600" },
+    { "id": "man-008", "title": "Vineyard Estate Villa", "address": "150 Terraza Way", "city": "Napa", "state": "CA", "beds": 7, "baths": 8.5, "sqft": 13100, "yearBuilt": 2010, "lotSizeAcres": 22.0, "price": 22500000, "image": "https://picsum.photos/seed/ptp-man-008/900/600" }
+  ]
+}
