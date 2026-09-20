@@ -14,6 +14,8 @@ config.js                         Your Google Maps browser key — the one file
 data/*.json                       Property & vehicle listings the game reads
 scripts/fetch-properties.js       Pulls real listings (RentCast), finds which
                                   homes have street coverage, adds aerial photos
+scripts/setup-streetview.js       `npm run setup:streetview` — puts your keys
+                                  in the right places for you
 .github/workflows/refresh-data.yml   Runs that script on a schedule
 .github/workflows/pages.yml       Deploys the site to GitHub Pages
 manifest.json / assets/icon.svg   "Add to Home Screen" support
@@ -102,6 +104,19 @@ cannot quietly stop being $0.
 
 You'll create **two keys**, because they're used in two different places
 with two different restrictions. Both come from the same project.
+
+> **Shortcut:** creating the keys is the only part that has to be you.
+> Once you have them, run
+>
+> ```
+> npm run setup:streetview
+> ```
+>
+> and it does the rest of the plumbing: writes the browser key into
+> `config.js`, checks the server key actually works against Google, stores
+> it as the repo secret, and offers to commit and push. Nothing is echoed
+> as you type, and the server key never touches the repo. Steps 3, 4 and 6
+> below are what it automates — read them anyway so you know what it did.
 
 1. Create a project at https://console.cloud.google.com/ and attach a
    billing account when prompted.
