@@ -238,6 +238,35 @@ button { font-family: inherit; }
   padding: 5px 11px; border-radius: 999px; font-size: .68rem; font-weight: 800;
   backdrop-filter: blur(4px);
 }
+
+/* The drag-to-look-around street view sits in the same frame as the aerial
+   photo; exactly one of the two is visible at a time. */
+.property-image-wrap iframe {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0; display: block;
+  background: #dfe4e2;
+}
+
+/* .property-image-wrap img sets display:block, which would otherwise beat
+   the hidden attribute and leave both views stacked on top of each other. */
+.property-image-wrap img[hidden],
+.property-image-wrap iframe[hidden] { display: none; }
+
+/* Flip between street view and aerial. Sits bottom-left, opposite the
+   caption, and stays clear of the panorama's own controls. */
+.view-toggle {
+  position: absolute; left: 10px; bottom: 10px;
+  background: rgba(10,30,25,.75); color: white;
+  border: 0; padding: 7px 13px; border-radius: 999px;
+  font-family: inherit; font-size: .68rem; font-weight: 800;
+  letter-spacing: .2px; cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: transform .12s ease, background .12s ease;
+}
+.view-toggle:hover { background: rgba(10,30,25,.9); }
+.view-toggle:active { transform: scale(.94); }
+
 .property-details { padding: 18px 20px 20px; }
 .property-details h2 { font-size: 1.2rem; margin-bottom: 4px; }
 .property-address { color: var(--ink-soft); font-weight: 700; font-size: .88rem; margin: 0 0 14px; }

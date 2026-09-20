@@ -425,6 +425,166 @@ function renderQuickAdjust(maxGuess) {
   });
 }
 
+/* =========================================================================
+   STREET VIEW
+   -------------------------------------------------------------------------
+   Every property carries two ways of being looked at:
+
+     item.streetView  {lat, lng, heading}  where the Street View camera
+                      stands and which way it must turn to face the house.
+                      Worked out during the data refresh; null when nobody
+                      has ever driven down that road.
+
+     item.image       a USGS aerial photo of the same spot. No key, free
+                      forever, always present — so the game still works with
+                      no Google key set at all.
+
+   Which one a player sees depends on config.js. With no key there, the game
+   behaves exactly as it did before: aerial photos all round.
+   ========================================================================= */
+
+const PTP = window.PTP_CONFIG || {};
+
+function browserMapsKey() {
+  const key = String(PTP.googleMapsBrowserKey || "").trim();
+  // Ignore the placeholder so a half-finished setup falls back cleanly
+  // instead of firing off requests Google will only reject.
+  return key && !/^(REPLACE|YOUR)/i.test(key) ? key : "";
+}
+
+// "interactive" | "photo" | "off". Always "off" until a key is pasted in.
+function streetViewMode() {
+  if (!browserMapsKey()) return "off";
+  const mode = String(PTP.streetViewMode || "interactive").toLowerCase();
+  return ["interactive", "photo", "off"].includes(mode) ? mode : "interactive";
+}
+
+function hasPrecomputedCamera(item) {
+  const sv = item && item.streetView;
+  return !!(sv && typeof sv.lat === "number" && typeof sv.lng === "number");
+}
+
+function hasStreetView(item) {
+  if (hasPrecomputedCamera(item)) return true;
+  // No stored camera — either this data was refreshed before street views
+  // existed, or without a server key. Google can still find the nearest
+  // panorama from the home's own coordinates, so it's worth a try.
+  return !!(item && typeof item.latitude === "number" && typeof item.longitude === "number");
+}
+
+function streetViewParams(item) {
+  // A touch of upward tilt: houses sit above the camera, and it stops the
+  // shot being half road.
+  const framing = { pitch: "4", fov: "80" };
+
+  if (hasPrecomputedCamera(item)) {
+    const sv = item.streetView;
+    return { location: `${sv.lat},${sv.lng}`, heading: String(Math.round(sv.heading || 0)), ...framing };
+  }
+
+  // No heading to give. The Static API handles this well: its docs promise
+  // that with no heading it "directs the camera towards the specified
+  // location", which is the shot we want. The Embed API documents no such
+  // default, so an interactive panorama may well open facing the wrong way
+  // until a refresh stores a real heading — players can drag round to the
+  // house in the meantime. Running the refresh with a server key is what
+  // fixes this properly. See README step 3.
+  return { location: `${item.latitude},${item.longitude}`, ...framing };
+}
+
+// A real drag-to-look-around panorama, via the Maps Embed API. Google
+// publishes Embed API usage as free of charge with no per-request billing,
+// which is why this is the default mode.
+function streetViewEmbedUrl(item) {
+  const params = new URLSearchParams({ key: browserMapsKey(), ...streetViewParams(item) });
+  return `https://www.google.com/maps/embed/v1/streetview?${params}`;
+}
+
+// A flat photo pointed at the house, via the Street View Static API. This
+// one IS billable past the monthly free allowance, so it is opt-in.
+function streetViewPhotoUrl(item) {
+  const params = new URLSearchParams({
+    key: browserMapsKey(),
+    size: "900x600",
+    ...streetViewParams(item),
+    // Match the search the refresh script used, so a home it found coverage
+    // for doesn't come back empty here.
+    radius: "60",
+    // Outdoor panoramas only — otherwise a nearby shop's indoor tour can win
+    // and the player gets a photo of a lobby.
+    source: "outdoor",
+    // Return a real 404 rather than a grey "no imagery" tile, so the image's
+    // error handler can quietly fall back to the aerial shot.
+    return_error_code: "true"
+  });
+  return `https://maps.googleapis.com/maps/api/streetview?${params}`;
+}
+
+const PHOTO_UNAVAILABLE = "data:image/svg+xml;utf8," + encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect width="900" height="600" fill="#f2e6da"/><text x="450" y="300" font-family="sans-serif" font-size="28" fill="#c9a98a" text-anchor="middle">Photo unavailable</text></svg>'
+);
+
+// Which view the round is currently showing, so the toggle knows what to
+// flip to and the next round can start from the street again.
+let currentView = "aerial";
+
+/**
+ * Show one property either from the street or from above, falling back
+ * gracefully every time something is missing: no key, no coverage, or an
+ * image that refuses to load.
+ */
+function showPropertyView(item, wanted) {
+  const imgEl = document.getElementById("property-image");
+  const frameEl = document.getElementById("property-streetview");
+  const pinEl = document.getElementById("property-pin");
+  const noteEl = document.getElementById("image-note");
+  const toggleEl = document.getElementById("btn-view-toggle");
+
+  const mode = streetViewMode();
+  const streetPossible = mode !== "off" && hasStreetView(item);
+  const view = wanted === "street" && streetPossible ? "street" : "aerial";
+  currentView = view;
+
+  imgEl.alt = item.title;
+
+  if (view === "street" && mode === "interactive") {
+    frameEl.src = streetViewEmbedUrl(item);
+    frameEl.hidden = false;
+    imgEl.hidden = true;
+  } else {
+    // Drop the old panorama so it stops loading in the background.
+    frameEl.hidden = true;
+    frameEl.removeAttribute("src");
+    imgEl.hidden = false;
+
+    if (view === "street") {
+      // Static photo: if Google has no usable shot after all, quietly drop
+      // to the aerial rather than showing a grey "no imagery" tile.
+      imgEl.onerror = () => { imgEl.onerror = null; showPropertyView(item, "aerial"); };
+      imgEl.src = streetViewPhotoUrl(item);
+    } else {
+      imgEl.onerror = () => { imgEl.onerror = null; imgEl.src = PHOTO_UNAVAILABLE; };
+      imgEl.src = item.image;
+    }
+  }
+
+  // Vehicles are plain product photos: no map, no reticle, no toggle.
+  const isMapped = typeof item.latitude === "number" && typeof item.longitude === "number";
+
+  // The reticle marks the centre of a top-down shot. On a street view the
+  // house is simply ahead of you, so it would only be in the way.
+  pinEl.hidden = !isMapped || view === "street";
+
+  noteEl.hidden = !isMapped;
+  noteEl.textContent = view === "street"
+    ? (mode === "interactive" ? "📍 Street view — drag to look around" : "📍 Street view — this home is straight ahead")
+    : "🛰️ This home, from above";
+
+  const canToggle = isMapped && streetPossible && PTP.allowViewToggle !== false;
+  toggleEl.hidden = !canToggle;
+  toggleEl.textContent = view === "street" ? "🛰️ From above" : "📍 Street view";
+}
+
 function loadRound() {
   const round = currentRound();
   const pack = CONFIG.packs[round.packKey];
@@ -442,20 +602,12 @@ function loadRound() {
     dotsWrap.appendChild(dot);
   });
 
-  const imgEl = document.getElementById("property-image");
-  imgEl.alt = item.title;
-  imgEl.onerror = () => { imgEl.onerror = null; imgEl.src = "data:image/svg+xml;utf8," + encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect width="900" height="600" fill="#f2e6da"/><text x="450" y="300" font-family="sans-serif" font-size="28" fill="#c9a98a" text-anchor="middle">Photo unavailable</text></svg>'
-  ); };
-  imgEl.src = item.image;
+  // Start every round at the kerb if we can — that's the game. Falls back
+  // to the aerial photo on its own when there's no street coverage.
+  showPropertyView(item, "street");
+
   document.getElementById("property-pack-badge").textContent = pack.emoji + " " + pack.name;
   document.getElementById("property-title").textContent = item.title;
-
-  // Aerial photos are centred on the listed home, so show the reticle that
-  // tells players which house they're pricing. Vehicles use plain photos.
-  const isAerial = typeof item.latitude === "number" && typeof item.longitude === "number";
-  document.getElementById("property-pin").hidden = !isAerial;
-  document.getElementById("image-note").hidden = !isAerial;
 
   // Real listing data has gaps that the demo data never did, so drop any
   // detail that came back empty rather than rendering "Built null".
@@ -488,7 +640,9 @@ function loadRound() {
   divider.style.display = secondaryChips.length ? "" : "none";
 
   // The USGS imagery server can take a beat, so warm the next round's photo
-  // while this one is being played.
+  // while this one is being played. Only ever the aerial one: it costs
+  // nothing, whereas pre-loading a Street View photo would spend a request
+  // on a round the player might never reach.
   const next = state.roundItems[state.roundIndex + 1];
   if (next) new Image().src = next.item.image;
 
@@ -677,6 +831,13 @@ function wireEvents() {
   document.getElementById("tab-play").addEventListener("click", () => startGame(false));
   document.getElementById("tab-packs").addEventListener("click", () => { renderStore(); showScreen("screen-store"); });
   document.getElementById("tab-me").addEventListener("click", () => showToast("🙂 Profile & achievements coming soon — check your stats above!"));
+
+  // Flip between the kerb and the sky. Useful when a tree, a van or a very
+  // enthusiastic hedge is standing where the house should be.
+  document.getElementById("btn-view-toggle").addEventListener("click", () => {
+    const round = currentRound();
+    if (round) showPropertyView(round.item, currentView === "street" ? "aerial" : "street");
+  });
 
   document.getElementById("btn-game-exit").addEventListener("click", () => {
     if (confirm("Leave this showcase? Your progress on this round will be lost.")) {

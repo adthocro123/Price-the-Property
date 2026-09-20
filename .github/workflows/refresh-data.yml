@@ -28,6 +28,11 @@ jobs:
       - name: Fetch fresh listings
         env:
           RENTCAST_API_KEY: ${{ secrets.RENTCAST_API_KEY }}
+          # Optional. Only used for free Street View metadata lookups, which
+          # decide which homes have street coverage and which way the camera
+          # should face. No imagery is requested here, so this costs nothing.
+          # Leave the secret unset and the game uses aerial photos instead.
+          GOOGLE_MAPS_SERVER_KEY: ${{ secrets.GOOGLE_MAPS_SERVER_KEY }}
         run: node scripts/fetch-properties.js
 
       - name: Commit updated data

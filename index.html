@@ -79,10 +79,25 @@
 
   <div class="property-card" id="property-card">
     <div class="property-image-wrap">
+      <!-- Aerial photo. Always present: it is the fallback whenever a home
+           has no street coverage, and the "from above" view players can
+           flip to. -->
       <img id="property-image" src="" alt="Property photo" />
+
+      <!-- Drag-to-look-around street view. Only shown once a Google Maps
+           browser key is set in config.js. -->
+      <iframe
+        id="property-streetview"
+        title="Street view of this property"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; gyroscope"
+        hidden></iframe>
+
       <span class="pack-badge" id="property-pack-badge">Starter</span>
       <span class="property-pin" id="property-pin" aria-hidden="true"></span>
       <span class="image-note" id="image-note">🛰️ This home, from above</span>
+      <button class="view-toggle" id="btn-view-toggle" type="button" hidden>🛰️ From above</button>
     </div>
     <div class="property-details">
       <h2 id="property-title">Loading…</h2>
@@ -177,6 +192,7 @@
   <button class="tab-btn" id="tab-me"><span class="tab-icon">🙂</span><span>Me</span></button>
 </nav>
 
+<script src="config.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
